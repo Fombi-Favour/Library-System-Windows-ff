@@ -98,6 +98,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\BookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BookForm.Designer.cs">
+      <DependentUpon>BookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BookIssued.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BookIssued.Designer.cs">
+      <DependentUpon>BookIssued.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BookReturned.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BookReturned.Designer.cs">
+      <DependentUpon>BookReturned.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +136,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\BookForm.fr.resx">
+      <DependentUpon>BookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BookForm.resx">
+      <DependentUpon>BookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BookIssued.fr.resx">
+      <DependentUpon>BookIssued.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BookIssued.resx">
+      <DependentUpon>BookIssued.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BookReturned.fr.resx">
+      <DependentUpon>BookReturned.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BookReturned.resx">
+      <DependentUpon>BookReturned.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.fr.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>

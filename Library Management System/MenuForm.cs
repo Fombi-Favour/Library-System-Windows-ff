@@ -101,26 +101,31 @@ namespace Library_Management_System
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new Forms.DashboardForm());
         }
 
         private void btnBooks_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new Forms.BookForm());
         }
 
         private void btnIssue_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new Forms.BookIssued());
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new Forms.BookReturned());
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new Forms.SettingsForm());
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -130,6 +135,7 @@ namespace Library_Management_System
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            currentForm.Close();
             Reset();
         }
 
@@ -157,6 +163,35 @@ namespace Library_Management_System
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(Properties.Settings.Default.lang == "en-US")
+            {
+                lblTime.Text = DateTime.Now.ToLongTimeString();
+                lblDate.Text = DateTime.Now.ToLongDateString();
+            }
+            else if (Properties.Settings.Default.lang == "fr")
+            {
+                lblTime.Text = DateTime.Now.ToString("HH : mm : ss");
+                lblDate.Text = DateTime.Now.ToLongDateString();
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

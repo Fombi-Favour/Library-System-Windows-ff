@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
             this.panelMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSettings = new System.Windows.Forms.Button();
@@ -42,10 +43,21 @@
             this.iconCurrentChildForm = new System.Windows.Forms.PictureBox();
             this.panelShadow = new Guna.UI2.WinForms.Guna2Panel();
             this.panelDesktop = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnClose = new System.Windows.Forms.PictureBox();
+            this.btnMin = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
+            this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -125,6 +137,8 @@
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.panelTitleBar.Controls.Add(this.btnMin);
+            this.panelTitleBar.Controls.Add(this.btnClose);
             this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
             this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
             resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
@@ -153,8 +167,55 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(74)))));
+            this.panelDesktop.Controls.Add(this.lblDate);
+            this.panelDesktop.Controls.Add(this.lblTime);
+            this.panelDesktop.Controls.Add(this.pictureBox1);
+            this.panelDesktop.Controls.Add(this.label1);
             resources.ApplyResources(this.panelDesktop, "panelDesktop");
             this.panelDesktop.Name = "panelDesktop";
+            // 
+            // lblDate
+            // 
+            resources.ApplyResources(this.lblDate, "lblDate");
+            this.lblDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(113)))), ((int)(((byte)(237)))));
+            this.lblDate.Name = "lblDate";
+            // 
+            // lblTime
+            // 
+            resources.ApplyResources(this.lblTime, "lblTime");
+            this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(113)))), ((int)(((byte)(237)))));
+            this.lblTime.Name = "lblTime";
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(50)))), ((int)(((byte)(158)))));
+            this.label1.Name = "label1";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnClose
+            // 
+            resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.Name = "btnClose";
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnMin
+            // 
+            resources.ApplyResources(this.btnMin, "btnMin");
+            this.btnMin.Name = "btnMin";
+            this.btnMin.TabStop = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // MenuForm
             // 
@@ -165,11 +226,18 @@
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.Name = "MenuForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuForm_Load);
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
+            this.panelDesktop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -189,5 +257,12 @@
         private System.Windows.Forms.Label lblTitleChildForm;
         private Guna.UI2.WinForms.Guna2Panel panelShadow;
         private Guna.UI2.WinForms.Guna2Panel panelDesktop;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox btnMin;
+        private System.Windows.Forms.PictureBox btnClose;
     }
 }
