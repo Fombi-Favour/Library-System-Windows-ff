@@ -25,6 +25,8 @@ namespace Library_Management_System
             if(ProgressBar.Value == 100)
             {
                 timer1.Stop();
+                new LoginForm().ShowDialog();
+                this.Close();
             }
         }
 
