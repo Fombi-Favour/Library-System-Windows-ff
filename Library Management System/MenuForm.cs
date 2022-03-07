@@ -26,7 +26,7 @@ namespace Library_Management_System
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Settings.Default.lang);
             InitializeComponent();
             leftBorderBtn = new Guna2Panel();
-            leftBorderBtn.Size = new Size(7, 65);
+            leftBorderBtn.Size = new Size(7, 50);
             panelMenu.Controls.Add(leftBorderBtn);
             //Form
             this.Text = string.Empty;
@@ -131,6 +131,11 @@ namespace Library_Management_System
         private void btnLogout_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+            if(MessageBox.Show("Are you sure to close the application?", "Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void btnHome_Click(object sender, EventArgs e)
