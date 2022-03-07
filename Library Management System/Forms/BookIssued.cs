@@ -18,5 +18,16 @@ namespace Library_Management_System.Forms
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Settings.Default.lang); 
             InitializeComponent();
         }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            new AddIssueForm().ShowDialog();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            new MenuForm().ShowDialog();
+            this.Close();
+        }
     }
 }

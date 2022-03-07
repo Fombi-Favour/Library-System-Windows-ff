@@ -117,47 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnDashboard.Text" xml:space="preserve">
+  <data name="btnHome.Text" xml:space="preserve">
     <value>ACCUEIL</value>
   </data>
-  <data name="btnEdit.Text" xml:space="preserve">
-    <value>ÉDITER</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnDel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 39</value>
+  <data name="btnNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 39</value>
   </data>
-  <data name="btnDel.Text" xml:space="preserve">
-    <value>SUPRIMER</value>
+  <data name="btnNew.Text" xml:space="preserve">
+    <value>NOUVEAU</value>
   </data>
-  <data name="btnIssue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 39</value>
+  <data name="Column2.HeaderText" xml:space="preserve">
+    <value>Nom d’élève</value>
   </data>
-  <data name="btnIssue.Text" xml:space="preserve">
-    <value>EMPRUNTER LIVRE</value>
+  <data name="Column3.HeaderText" xml:space="preserve">
+    <value>Classe d'élève</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 27</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Nom d'élève</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 27</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
+  <data name="Column4.HeaderText" xml:space="preserve">
     <value>Nom du Livre</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 27</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Classe</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 27</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="Column5.HeaderText" xml:space="preserve">
     <value>LivreID</value>
   </data>
 </root>

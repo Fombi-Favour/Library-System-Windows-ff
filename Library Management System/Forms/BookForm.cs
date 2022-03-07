@@ -18,5 +18,26 @@ namespace Library_Management_System.Forms
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Settings.Default.lang);
             InitializeComponent();
         }
+
+        public void Display()
+        {
+            DbBooks.DisplayAndSearch("Select ID, name, author from books", GVlist);
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            new AddBookForm(this).ShowDialog();
+        }
+
+        private void BookForm_Shown(object sender, EventArgs e)
+        {
+            Display();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            new MenuForm().ShowDialog();
+            this.Close();
+        }
     }
 }
