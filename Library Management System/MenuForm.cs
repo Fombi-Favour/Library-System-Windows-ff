@@ -122,15 +122,9 @@ namespace Library_Management_System
             OpenChildForm(new Forms.BookReturned());
         }
 
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color5);
-            OpenChildForm(new Forms.SettingsForm());
-        }
-
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color6);
+            ActivateButton(sender, RGBColors.color5);
             if(MessageBox.Show("Are you sure to close the application?", "Warning",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
