@@ -65,6 +65,12 @@ namespace Library_Management_System
         {
             query = "Select * from users where name='"+ txtuser.Text + "' and password='" + txtpass.Text + "' ";
             SelectData(query);
+            Clear();
+        }
+
+        private void Clear()
+        {
+            txtuser.Text = txtpass.Text = string.Empty;
         }
 
         private void SelectData(string query)

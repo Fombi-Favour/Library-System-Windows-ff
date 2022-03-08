@@ -51,10 +51,16 @@ namespace Library_Management_System
                 "('"+txtsch.Text+"' " +
                 ",'"+txtuser.Text+"' " +
                 ",'"+txtpass.Text+"')";
-            InsertData(query, "Unable to register", "Saved to database");
+            InsertData(query, "Unable to register");
+            Clear();
         }
 
-        private void InsertData(string query, string msg_false, string msg_true)
+        private void Clear()
+        {
+            txtsch.Text = txtuser.Text = txtpass.Text = String.Empty;
+        }
+
+        private void InsertData(string query, string msg_false)
         {
             try
             {
@@ -66,7 +72,8 @@ namespace Library_Management_System
 
                 if (result > 0)
                 {
-                    MessageBox.Show(msg_true);
+                    new WelcomeForm().ShowDialog();
+                    this.Close();
                 }
                 else
                 {
