@@ -2336,18 +2336,14 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Nom d'utilisateur</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="linkLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="linkLblReg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 390</value>
   </data>
-  <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 390</value>
+  <data name="linkLblReg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>536, 27</value>
   </data>
-  <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>549, 27</value>
-  </data>
-  <data name="linkLabel1.Text" xml:space="preserve">
-    <value>Vous n'avez pas de compte ? Créer un compte</value>
+  <data name="linkLblReg.Text" xml:space="preserve">
+    <value>Vous n'avez pas de compte? Créer le compte</value>
   </data>
   <data name="btnmin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

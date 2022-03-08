@@ -122,7 +122,7 @@
     <value>Copperplate Gothic Bold, 12pt</value>
   </data>
   <data name="btnRegister.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 699</value>
+    <value>128, 699</value>
   </data>
   <data name="btnRegister.Size" type="System.Drawing.Size, System.Drawing">
     <value>331, 45</value>
@@ -190,7 +190,7 @@
     <value>5, 4, 5, 4</value>
   </data>
   <data name="txtpass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>470, 38</value>
+    <value>516, 38</value>
   </data>
   <data name="txtpass.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -250,7 +250,7 @@
     <value>5, 4, 5, 4</value>
   </data>
   <data name="txtsch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>470, 38</value>
+    <value>516, 38</value>
   </data>
   <data name="txtsch.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -310,7 +310,7 @@
     <value>5, 4, 5, 4</value>
   </data>
   <data name="txtuser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>470, 38</value>
+    <value>516, 38</value>
   </data>
   <data name="txtuser.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -397,7 +397,7 @@
     <value>NoControl</value>
   </data>
   <data name="linkLblLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 770</value>
+    <value>83, 771</value>
   </data>
   <data name="linkLblLog.Size" type="System.Drawing.Size, System.Drawing">
     <value>394, 27</value>
@@ -438,7 +438,7 @@
 </value>
   </data>
   <data name="btnMinimise.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 12</value>
+    <value>481, 12</value>
   </data>
   <data name="btnMinimise.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 34</value>
@@ -483,7 +483,7 @@
 </value>
   </data>
   <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>500, 12</value>
+    <value>518, 12</value>
   </data>
   <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 34</value>
@@ -1277,7 +1277,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>543, 830</value>
+    <value>561, 830</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

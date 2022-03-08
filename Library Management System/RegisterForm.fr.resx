@@ -164,14 +164,14 @@
   <data name="label1.Text" xml:space="preserve">
     <value>SYSTÈME DE GESTION DE BIBLIOTHÈQUE </value>
   </data>
-  <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 779</value>
+  <data name="linkLblLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 772</value>
   </data>
-  <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 27</value>
+  <data name="linkLblLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 27</value>
   </data>
-  <data name="linkLabel1.Text" xml:space="preserve">
-    <value>Vous avez déjà un compte? Connecter</value>
+  <data name="linkLblLog.Text" xml:space="preserve">
+    <value>Vous avez déjà un compte? Se connecter</value>
   </data>
   <data name="btnMinimise.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -952,9 +952,6 @@
 </value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
 </root>

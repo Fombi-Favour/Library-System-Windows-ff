@@ -13,7 +13,7 @@ namespace Library_Management_System.Forms
     {
         public static MySqlConnection GetConnection()
         {
-            string sql = "server = localhost; userid = favour; password = favour; database = library;"/;
+            string sql = "server = localhost; userid = favour; password = favour; database = library;";
             MySqlConnection conn = new MySqlConnection(sql);
             try
             {

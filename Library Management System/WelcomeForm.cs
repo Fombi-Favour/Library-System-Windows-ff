@@ -37,7 +37,7 @@ namespace Library_Management_System
             if (this.Opacity == 0)
             {
                 timer2.Stop();
-                new MenuForm().Show();
+                new MenuForm().ShowDialog();
                 this.Hide();
             }
         }

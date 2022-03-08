@@ -125,10 +125,23 @@ namespace Library_Management_System
         private void btnLogout_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
-            if(MessageBox.Show("Are you sure to close the application?", "Warning",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if(Properties.Settings.Default.lang == "en-US")
             {
-                Application.Exit();
+                if (MessageBox.Show("Are you sure to logout?", "Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    new LoginForm().ShowDialog();
+                    this.Close();
+                }
+            }
+            else if (Properties.Settings.Default.lang == "fr")
+            {
+                if (MessageBox.Show("Êtes-vous sûr de vous déconnecter?", "Avertissement",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    new LoginForm().Show();
+                    this.Close();
+                }
             }
         }
 
