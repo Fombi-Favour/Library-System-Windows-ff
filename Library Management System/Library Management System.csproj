@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,7 @@
     <Compile Include="Forms\AddIssueForm.Designer.cs">
       <DependentUpon>AddIssueForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Book.cs" />
     <Compile Include="Forms\BookForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,14 +135,13 @@
     <Compile Include="Forms\BookReturned.Designer.cs">
       <DependentUpon>BookReturned.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\books.cs" />
     <Compile Include="Forms\DashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DbBooks.cs" />
+    <Compile Include="Forms\DbBook.cs" />
     <Compile Include="LanguageForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     <Compile Include="WelcomeForm.Designer.cs">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddBookForm.fr.resx">
       <DependentUpon>AddBookForm.cs</DependentUpon>
     </EmbeddedResource>

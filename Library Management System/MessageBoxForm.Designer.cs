@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessageBoxForm));
             this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
             this.labelCaption = new System.Windows.Forms.Label();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -39,6 +38,7 @@
             this.panelBody = new System.Windows.Forms.Panel();
             this.labelMessage = new System.Windows.Forms.Label();
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panelTitleBar.SuspendLayout();
             this.panelButtons.SuspendLayout();
             this.panelBody.SuspendLayout();
@@ -51,16 +51,6 @@
             this.panelTitleBar.Controls.Add(this.labelCaption);
             resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
             this.panelTitleBar.Name = "panelTitleBar";
-            // 
-            // btnClose
-            // 
-            resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // labelCaption
             // 
@@ -125,6 +115,16 @@
             this.pictureBoxIcon.Name = "pictureBoxIcon";
             this.pictureBoxIcon.TabStop = false;
             // 
+            // btnClose
+            // 
+            resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Name = "btnClose";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // MessageBoxForm
             // 
             resources.ApplyResources(this, "$this");
@@ -147,7 +147,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panelTitleBar;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label labelCaption;
         private System.Windows.Forms.Panel panelButtons;
         private System.Windows.Forms.Panel panelBody;
@@ -156,5 +155,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnClose;
     }
 }

@@ -1,19 +1,19 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace Library_Management_System.Forms
 {
-    class DbBooks
+    class DbBook
     {
         public static MySqlConnection GetConnection()
         {
-            string sql = "server = localhost; userid = favour; password = favour; database = library;";
+            string sql = "datasource=localhost;port=3306;username=root;password=;database=library";
             MySqlConnection conn = new MySqlConnection(sql);
             try
             {
@@ -21,45 +21,46 @@ namespace Library_Management_System.Forms
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("MySql Connection \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("MySQL Connection! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return conn;
         }
 
-        public static void AddBook(books bk)
+        public static void AddBook(Book bk)
         {
-            string sql = "Insert into books values (@booksiD, @booksname, @booksauthor)";
+            string sql = "Insert into book values (NULL, @BookID, @BookName, @BookAuthor)";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@booksiD", MySqlDbType.VarChar).Value = bk.ID;
-            cmd.Parameters.Add("@booksname", MySqlDbType.VarChar).Value = bk.name;
-            cmd.Parameters.Add("@booksauthor", MySqlDbType.VarChar).Value = bk.author;
+            cmd.Parameters.Add("@BookID", MySqlDbType.VarChar).Value = bk.ID;
+            cmd.Parameters.Add("@BookName", MySqlDbType.VarChar).Value = bk.Name;
+            cmd.Parameters.Add("@BookAuthor", MySqlDbType.VarChar).Value = bk.Author;
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Added Successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Added Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (MySqlException ex)
+            catch(MySqlException ex)
             {
                 MessageBox.Show("Book not insert. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             con.Close();
         }
 
-        public static void UpdateBook(books bk, string id)
+        public static void UpdateBook(Book bk, string sn)
         {
-            string sql = "Update books set ID = @booksiD, name = @booksname, author = @booksauthor";
+            string sql = "Update book set ID = @BookID, Name = @BookName, Author = @BookAuthor where sn = @BookSN";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@booksiD", MySqlDbType.VarChar).Value = bk.ID;
-            cmd.Parameters.Add("@booksname", MySqlDbType.VarChar).Value = bk.name;
-            cmd.Parameters.Add("@booksauthor", MySqlDbType.VarChar).Value = bk.author;
+            cmd.Parameters.Add("@BookSN", MySqlDbType.VarChar).Value = sn;
+            cmd.Parameters.Add("@BookID", MySqlDbType.VarChar).Value = bk.ID;
+            cmd.Parameters.Add("@BookName", MySqlDbType.VarChar).Value = bk.Name;
+            cmd.Parameters.Add("@BookAuthor", MySqlDbType.VarChar).Value = bk.Author;
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Updated Successfully.", "Imformation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Updated Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (MySqlException ex)
             {
@@ -70,15 +71,16 @@ namespace Library_Management_System.Forms
 
         public static void DeleteBook(string id)
         {
-            string sql = "Delete from books where ID = @booksiD";
+            string sql = "Delete from book where ID = @BookID";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@booksiD", MySqlDbType.VarChar).Value = id;
+            cmd.Parameters.Add("@BookID", MySqlDbType.VarChar).Value = id;
+            
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Deleted Successfully.", "Imformation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Deleted Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (MySqlException ex)
             {
@@ -91,10 +93,11 @@ namespace Library_Management_System.Forms
         {
             string sql = query;
             MySqlConnection conn = GetConnection();
-            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            MySqlCommand cmd = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
             DataTable tbl = new DataTable();
             adp.Fill(tbl);
+            dgv.DataSource = tbl;
             conn.Close();
         }
     }

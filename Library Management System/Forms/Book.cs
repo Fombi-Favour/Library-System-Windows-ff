@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Library_Management_System.Forms
 {
-    class books
+    class Book
     {
         public string ID { get; set; }
-        public string name { get; set; }
-        public string author { get; set; }
+        public string Name { get; set; }
+        public string Author { get; set; }
 
-        public books(string iD, string name, string author)
+        public Book(string iD, string name, string author)
         {
             ID = iD;
-            this.name = name;
-            this.author = author;
+            Name = name;
+            Author = author;
         }
     }
 }

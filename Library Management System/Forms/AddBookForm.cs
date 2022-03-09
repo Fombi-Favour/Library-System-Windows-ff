@@ -14,12 +14,22 @@ namespace Library_Management_System.Forms
     public partial class AddBookForm : Form
     {
         private readonly BookForm _parent;
+        public string iD, name, author, sn;
 
         public AddBookForm(BookForm parent)
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Settings.Default.lang);
             InitializeComponent();
             _parent = parent;
+        }
+
+        public void UpdateInfo()
+        {
+            lblText.Text = "Update Book";
+            btnSave.Text = "UPDATE";
+            txtBkid.Text = iD;
+            txtBkname.Text = name;
+            txtBkauthor.Text = author;
         }
 
         public void Clear()
@@ -44,11 +54,16 @@ namespace Library_Management_System.Forms
                 MessageBox.Show("Book author is empty ( > 1).");
                 return;
             }
-            if(btnSave.Text == "Save")
+            if(btnSave.Text == "SAVE")
             {
-                books bk = new books(txtBkid.Text.Trim(), txtBkname.Text.Trim(), txtBkauthor.Text.Trim());
-                DbBooks.AddBook(bk);
+                Book bk = new Book(txtBkid.Text.Trim(), txtBkname.Text.Trim(), txtBkauthor.Text.Trim());
+                DbBook.AddBook(bk);
                 Clear();
+            }
+            if(btnSave.Text == "UPDATE")
+            {
+                Book bk = new Book(txtBkid.Text.Trim(), txtBkname.Text.Trim(), txtBkauthor.Text.Trim());
+                DbBook.UpdateBook(bk, sn);
             }
             _parent.Display();
         }

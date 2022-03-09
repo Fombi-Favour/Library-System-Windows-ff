@@ -13,20 +13,24 @@ namespace Library_Management_System.Forms
 {
     public partial class BookForm : Form
     {
+        AddBookForm form;
+
         public BookForm()
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Settings.Default.lang);
             InitializeComponent();
+            form = new AddBookForm(this);
         }
 
         public void Display()
         {
-            DbBooks.DisplayAndSearch("Select ID, name, author from books", GVlist);
+            DbBook.DisplayAndSearch("Select ID, Name, Author from book", GVlist);
         }
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            new AddBookForm(this).ShowDialog();
+            form.Clear();
+            form.ShowDialog();
         }
 
         private void BookForm_Shown(object sender, EventArgs e)
@@ -38,6 +42,36 @@ namespace Library_Management_System.Forms
         {
             new MenuForm().ShowDialog();
             this.Close();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            DbBook.DisplayAndSearch("Select ID, Name, Author from book where Name like '%"+ txtSearch.Text +"%'", GVlist);
+        }
+
+        private void GVlist_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.ColumnIndex == 0)
+            {
+                //Edit
+                form.Clear();
+                form.iD = GVlist.Rows[e.RowIndex].Cells[2].Value.ToString();
+                form.name = GVlist.Rows[e.RowIndex].Cells[3].Value.ToString();
+                form.author = GVlist.Rows[e.RowIndex].Cells[4].Value.ToString();
+                form.UpdateInfo();
+                form.ShowDialog();
+                return;
+            }
+            if(e.ColumnIndex == 1)
+            {
+                //Delete
+                if(MessageBox.Show("Are you sure to delete?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    DbBook.DeleteBook(GVlist.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    Display();
+                }
+                return;
+            }
         }
     }
 }
