@@ -11,17 +11,16 @@ using System.Windows.Forms;
 
 namespace Library_Management_System.Forms
 {
-    public partial class BookReturned : Form
+    public partial class AddReturnForm : Form
     {
-        public BookReturned()
+        public AddReturnForm()
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Settings.Default.lang);
             InitializeComponent();
         }
 
-        private void btnDashboard_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            new MenuForm().ShowDialog();
             this.Close();
         }
     }

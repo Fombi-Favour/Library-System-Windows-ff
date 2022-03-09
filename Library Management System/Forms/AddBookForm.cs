@@ -25,11 +25,22 @@ namespace Library_Management_System.Forms
 
         public void UpdateInfo()
         {
-            lblText.Text = "Update Book";
-            btnSave.Text = "UPDATE";
-            txtBkid.Text = iD;
-            txtBkname.Text = name;
-            txtBkauthor.Text = author;
+            if(Properties.Settings.Default.lang == "en-US")
+            {
+                lblText.Text = "Update Book";
+                btnSave.Text = "UPDATE";
+                txtBkid.Text = iD;
+                txtBkname.Text = name;
+                txtBkauthor.Text = author;
+            }
+            else if (Properties.Settings.Default.lang == "fr")
+            {
+                lblText.Text = "Livre de Mise à Jour";
+                btnSave.Text = "MISE À JOUR";
+                txtBkid.Text = iD;
+                txtBkname.Text = name;
+                txtBkauthor.Text = author;
+            }
         }
 
         public void Clear()
@@ -41,29 +52,53 @@ namespace Library_Management_System.Forms
         {
             if(txtBkid.Text.Trim().Length < 3)
             {
-                MessageBox.Show("BookID is empty ( > 3).");
+                if(Properties.Settings.Default.lang == "en-US")
+                {
+                    MessageBox.Show("BookID is empty ( > 3).");
+                }
+                else if (Properties.Settings.Default.lang == "fr")
+                {
+                    MessageBox.Show("LivreID est vide ( > 3).");
+                }
+
                 return;
             }
             if(txtBkname.Text.Trim().Length < 1)
             {
-                MessageBox.Show("Book name is empty ( < 1).");
+                if(Properties.Settings.Default.lang == "en-US")
+                {
+                    MessageBox.Show("Book name is empty ( < 1).");
+                }
+                else if (Properties.Settings.Default.lang == "fr")
+                {
+                    MessageBox.Show("Nom du livre est vide ( < 1).");
+                }
+
                 return;
             }
             if(txtBkauthor.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Book author is empty ( > 1).");
+                if(Properties.Settings.Default.lang == "en-US")
+                {
+                    MessageBox.Show("Book author is empty ( > 1).");
+                }
+                else if (Properties.Settings.Default.lang == "fr")
+                {
+                    MessageBox.Show("L'auteur du livre est vide ( > 1).");
+                }
+
                 return;
             }
-            if(btnSave.Text == "SAVE")
+            if(btnSave.Text == "SAVE" || btnSave.Text == "ENREGISTRER")
             {
                 Book bk = new Book(txtBkid.Text.Trim(), txtBkname.Text.Trim(), txtBkauthor.Text.Trim());
                 DbBook.AddBook(bk);
                 Clear();
             }
-            if(btnSave.Text == "UPDATE")
+            if(btnSave.Text == "UPDATE" || btnSave.Text == "MISE À JOUR")
             {
                 Book bk = new Book(txtBkid.Text.Trim(), txtBkname.Text.Trim(), txtBkauthor.Text.Trim());
-                DbBook.UpdateBook(bk, sn);
+                DbBook.UpdateBook(bk, iD);
             }
             _parent.Display();
         }

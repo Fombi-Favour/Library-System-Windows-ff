@@ -118,34 +118,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="GVlist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 96</value>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 58</value>
   </data>
-  <data name="GVlist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1138, 484</value>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 243</value>
   </data>
-  <data name="btnHome.Text" xml:space="preserve">
-    <value>ACCUEIL</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>     Cette application a été faite pour toutes les écoles
+secondaires de la République de Cameroun pour avoir une
+bonne gestion de la bibliothèque scolaire.
+     Il a été facilité pourtous les bibliothécaires d'ajouter des
+livres, d'ajouter des emprunts et également d'ajouter des
+retours effectués par des étudiants.
+     Il est également facile pour les bibliothécaires scolaires de
+connaître le nombre total de livres, les élèves empruntant le
+livre et retournant le livre.</value>
   </data>
-  <data name="btnNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 39</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 27</value>
   </data>
-  <data name="btnNew.Text" xml:space="preserve">
-    <value>NOUVEAU</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Contactez Moi</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 27</value>
   </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1144, 654</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>À Propos de L'application</value>
   </data>
-  <data name="Column2.HeaderText" xml:space="preserve">
-    <value>LivreID</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 27</value>
   </data>
-  <data name="Column3.HeaderText" xml:space="preserve">
-    <value>Nom du Livre</value>
-  </data>
-  <data name="Column4.HeaderText" xml:space="preserve">
-    <value>Auteur</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>À Propos et Contact</value>
   </data>
 </root>

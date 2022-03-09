@@ -226,7 +226,7 @@
     <value>135, 401</value>
   </data>
   <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 53</value>
+    <value>305, 53</value>
   </data>
   <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>

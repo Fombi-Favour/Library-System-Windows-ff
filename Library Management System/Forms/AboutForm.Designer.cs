@@ -49,9 +49,9 @@
             // 
             // panelTitleBar
             // 
+            resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
             this.panelTitleBar.Controls.Add(this.btnClose);
             this.panelTitleBar.Controls.Add(this.label1);
-            resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
             this.panelTitleBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(113)))), ((int)(((byte)(219)))));
             this.panelTitleBar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(77)))), ((int)(((byte)(227)))));
             this.panelTitleBar.Name = "panelTitleBar";
@@ -59,8 +59,8 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(77)))), ((int)(((byte)(227)))));
             resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(77)))), ((int)(((byte)(227)))));
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Name = "btnClose";
@@ -75,12 +75,12 @@
             // 
             // guna2GradientPanel2
             // 
+            resources.ApplyResources(this.guna2GradientPanel2, "guna2GradientPanel2");
             this.guna2GradientPanel2.Controls.Add(this.label4);
             this.guna2GradientPanel2.Controls.Add(this.label3);
             this.guna2GradientPanel2.Controls.Add(this.label2);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(100)))), ((int)(((byte)(237)))));
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(61)))), ((int)(((byte)(224)))));
-            resources.ApplyResources(this.guna2GradientPanel2, "guna2GradientPanel2");
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             // 
             // label4

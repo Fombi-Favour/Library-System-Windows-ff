@@ -49,6 +49,7 @@
             // 
             // btnRegister
             // 
+            resources.ApplyResources(this.btnRegister, "btnRegister");
             this.btnRegister.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnRegister.BorderRadius = 24;
             this.btnRegister.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -56,7 +57,6 @@
             this.btnRegister.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnRegister.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnRegister.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
-            resources.ApplyResources(this.btnRegister, "btnRegister");
             this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
@@ -69,6 +69,7 @@
             // 
             // txtpass
             // 
+            resources.ApplyResources(this.txtpass, "txtpass");
             this.txtpass.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txtpass.BorderRadius = 12;
             this.txtpass.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -79,7 +80,6 @@
             this.txtpass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtpass.FillColor = System.Drawing.Color.Silver;
             this.txtpass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.txtpass, "txtpass");
             this.txtpass.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtpass.Name = "txtpass";
@@ -96,6 +96,7 @@
             // 
             // txtsch
             // 
+            resources.ApplyResources(this.txtsch, "txtsch");
             this.txtsch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txtsch.BorderRadius = 12;
             this.txtsch.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -106,7 +107,6 @@
             this.txtsch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtsch.FillColor = System.Drawing.Color.Silver;
             this.txtsch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.txtsch, "txtsch");
             this.txtsch.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtsch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtsch.Name = "txtsch";
@@ -122,6 +122,7 @@
             // 
             // txtuser
             // 
+            resources.ApplyResources(this.txtuser, "txtuser");
             this.txtuser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txtuser.BorderRadius = 12;
             this.txtuser.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -132,7 +133,6 @@
             this.txtuser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtuser.FillColor = System.Drawing.Color.Silver;
             this.txtuser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.txtuser, "txtuser");
             this.txtuser.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtuser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtuser.Name = "txtuser";
@@ -154,8 +154,8 @@
             // 
             // linkLblLog
             // 
-            this.linkLblLog.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             resources.ApplyResources(this.linkLblLog, "linkLblLog");
+            this.linkLblLog.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.linkLblLog.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLblLog.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(235)))), ((int)(((byte)(195)))));
             this.linkLblLog.Name = "linkLblLog";

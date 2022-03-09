@@ -117,71 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txtDateIssue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 467</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 27</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Emprunter</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 27</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>LivreID</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 27</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Classe</value>
-  </data>
   <data name="btnDashboard.Text" xml:space="preserve">
     <value>ACCUEIL</value>
-  </data>
-  <data name="btnIssue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 39</value>
-  </data>
-  <data name="btnIssue.Text" xml:space="preserve">
-    <value>RETOURNER LE LIVRE</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 27</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Nom d'élève</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 27</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Nom du Livre</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 27</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>LIVRES EMPRUNTÉS</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 27</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>LIVRES RETOURNÉS </value>
   </data>
   <data name="btnPrint.Text" xml:space="preserve">
     <value>IMPRIMER</value>
   </data>
-  <data name="txtDateReturn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 532</value>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Nom d'élève</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 27</value>
+  <data name="Column2.HeaderText" xml:space="preserve">
+    <value>Classe d'élève</value>
   </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Retourner</value>
+  <data name="Column3.HeaderText" xml:space="preserve">
+    <value>Nom du Livre</value>
+  </data>
+  <data name="Column4.HeaderText" xml:space="preserve">
+    <value>LivreID</value>
+  </data>
+  <data name="Column5.HeaderText" xml:space="preserve">
+    <value>Date Empruntée</value>
+  </data>
+  <data name="Column6.HeaderText" xml:space="preserve">
+    <value>Date de Retour</value>
   </data>
 </root>

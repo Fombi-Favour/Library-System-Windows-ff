@@ -51,7 +51,14 @@ namespace Library_Management_System
                 "('"+txtsch.Text+"' " +
                 ",'"+txtuser.Text+"' " +
                 ",'"+txtpass.Text+"')";
-            InsertData(query, "Unable to register");
+            if(Properties.Settings.Default.lang == "en-US")
+            {
+                InsertData(query, "Unable to register");
+            }
+            else if (Properties.Settings.Default.lang == "fr")
+            {
+                InsertData(query, "Impossible d'enregistrer");
+            }
             Clear();
         }
 

@@ -118,13 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnLogout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
   <data name="btnLogout.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panelShadow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1420, 9</value>
+  </data>
+  <data name="&gt;&gt;lblTime.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="btnLogout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAABElJREFUaEPt
@@ -149,48 +152,44 @@
         lbVo0aIRbW1fAGUKjhrFT524AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnLogout.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btnBooks.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnLogout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnLogout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 808</value>
-  </data>
-  <data name="btnLogout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 65</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnLogout.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btnLogout.Text" xml:space="preserve">
-    <value>Logout</value>
-  </data>
-  <data name="btnLogout.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnLogout.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;btnLogout.Name" xml:space="preserve">
-    <value>btnLogout</value>
-  </data>
-  <data name="&gt;&gt;btnLogout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnLogout.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btnLogout.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnReturn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="btnIssue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="btnReturn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="btnMin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAfFJREFUWEft
+        lztOw0AQhs2joIi9m0uA4AQgxKvh0aSHhp5jcIBISDQguEB6kAhFRLxOQKLhFEkoSLI5gJlJhsaZxFln
+        Fyj8Sb8UWd7/X2XlmVkvJyfHMXHFW9LKXxtEcrevgjMU/tahvxrH3iK99rtA8AJs5KSnxF1fiU9QPEGd
+        4TthcIxraLlbdORvweZCZjPTFYq3bij3ycY+cc1b7it5zYabKJRX6EW2dujWpATz57Gw7Kp+vRcF2c8H
+        fgRg+JgIsKGqlX/SyrFOEhw3xWRjVDoYY4vqKnlAcWaMSoloJA2tC77uTCUI6xxr6EKN4IhiZ6cXiXvW
+        zIF0KG4pdjawRcHCdtLIoTpYLSg+HeyjjIlTDeqFDYpPB1sSZ+JSWskSxaczmkp4o4+KH19erGQSruU8
+        UbDBc4pPB6aPU84E9S82OKjLPc7EpYyO+E8+kmZhneLToTLTSpo4VBszKX42aFrmzKxLR+KGYmcHx3TO
+        zIWgax1SrBkwDkWcoWU1Mw0LiFbFHcbQqnTd36a4bOBQyRnbUVCmmOzQyP8wbj637Iz8CF5w0DARMI+e
+        rF2afhheO60cd1A2Gq1MgYBNqJEvfPhUveIdh2zcgmUBx3SchCF42mDbwncy1zkbYIvCPorNHicSUgmf
+        GbevnJwcUzzvG4bOXK7xrccoAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;btnBooks.Name" xml:space="preserve">
+    <value>btnBooks</value>
+  </data>
+  <data name="&gt;&gt;btnMin.Parent" xml:space="preserve">
+    <value>panelTitleBar</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblTime.Parent" xml:space="preserve">
+    <value>panelDesktop</value>
+  </data>
+  <data name="btnIssue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnLogout.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="btnReturn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -209,219 +208,47 @@
         pDqw1GJJqgNLLZakOvzLWiYmJiZGAfgFkQAVdjB3wJgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnReturn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="panelTitleBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 0</value>
+  </data>
+  <data name="btnMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1306, -5</value>
   </data>
   <data name="btnReturn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnReturn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 520</value>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 306</value>
   </data>
-  <data name="btnReturn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 65</value>
-  </data>
-  <data name="btnReturn.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnMin.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="btnReturn.Text" xml:space="preserve">
-    <value> Books Returned</value>
-  </data>
-  <data name="btnReturn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnReturn.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;btnReturn.Name" xml:space="preserve">
-    <value>btnReturn</value>
-  </data>
-  <data name="&gt;&gt;btnReturn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="iconCurrentChildForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 41</value>
   </data>
   <data name="&gt;&gt;btnReturn.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;btnReturn.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;iconCurrentChildForm.Name" xml:space="preserve">
+    <value>iconCurrentChildForm</value>
   </data>
-  <data name="btnIssue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="btnIssue.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="iconCurrentChildForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 27</value>
   </data>
-  <data name="btnIssue.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        /rhS+cTwHw8AAAAASUVORK5CYII=
-</value>
+  <data name="&gt;&gt;lblTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnIssue.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnIssue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnIssue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 455</value>
-  </data>
-  <data name="btnIssue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 65</value>
-  </data>
-  <data name="btnIssue.TabIndex" type="System.Int32, mscorlib">
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="btnIssue.Text" xml:space="preserve">
-    <value> Books Issued</value>
-  </data>
-  <data name="btnIssue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnIssue.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;btnIssue.Name" xml:space="preserve">
-    <value>btnIssue</value>
-  </data>
-  <data name="&gt;&gt;btnIssue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnIssue.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btnIssue.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnBooks.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="btnBooks.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnBooks.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAc9JREFUaEPt
-        mslLAmEYh6VD/0HXztG1/6BOow0lLaekKKic0YqkIIiQSKEFL0VhizmTtngoMiiDFlsIog4WLZTWuSA6
-        BW02b83wHQqCsUb9Wt4HnsvAfN/vOQgeRof8ZAJlZZkirzd5OX1Q4PURgTMM01SsZbPJNHU8VibLZ2XP
-        59vK7zecVdJKp0m6CPTAjounosDpwWs25JF56ryNnww7qh5jI1aIui1wNMABHIcAtkep+J2A20uPTRn/
-        KwPkFy49zRiQLDHgTwY8rA7CTbAv6T6H3R/ukU1JwJm3XTk42coR7++RlZ9jAAYkaNoCrme7P/3fotW7
-        5f4P98imJCCdYgAGaBQDMECjGIABGsUADNAoBmCARjEAAzSKARig0f8ZEB1pgr2+GthyVsJaZwVExjpg
-        s6eeikpAXWEBmaeO/MKMrQSmbKWw4OAUgw6zRMO5jmpJ3iPwhUYyTx1fYzFsCb0gvcSBNifr8+BvMsbs
-        dnsGmafOhJWNX50fkiPoshsYAl9DkZ9MSwx/o/H0YHFSImdQ5XBpGvzNJftkWmKI9Uy+aGGfQq6Wp/Co
-        E2gacrUqP+JxC5tD5iWGr47J9XJMl8gz7h/hVz41QNKCTvcK4XkY1WNxnZwAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnBooks.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnBooks.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnBooks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 390</value>
-  </data>
-  <data name="btnBooks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 65</value>
   </data>
   <data name="btnBooks.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="btnBooks.Text" xml:space="preserve">
-    <value> Books</value>
-  </data>
-  <data name="btnBooks.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnBooks.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;btnBooks.Name" xml:space="preserve">
-    <value>btnBooks</value>
-  </data>
-  <data name="&gt;&gt;btnBooks.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnBooks.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btnBooks.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnDashboard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="btnDashboard.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnDashboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAERJREFUWEft
-        1r0NACAIhNEbymldAAvCitpYWnsF30uuJ+EnCMiM4Yyq1naGAu4kAJ1VxXSGQ+RvAYDXbv4MBfjfcjQn
-        HT1zNz2HZUO6AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnDashboard.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnDashboard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnDashboard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 325</value>
-  </data>
-  <data name="btnDashboard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 65</value>
-  </data>
-  <data name="btnDashboard.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnDashboard.Text" xml:space="preserve">
-    <value> Dashboard</value>
-  </data>
-  <data name="btnDashboard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnDashboard.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;btnDashboard.Name" xml:space="preserve">
-    <value>btnDashboard</value>
-  </data>
-  <data name="&gt;&gt;btnDashboard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnDashboard.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btnDashboard.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="btnMin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="btnHome.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1163,106 +990,448 @@
         ixvMM//Z
 </value>
   </data>
-  <data name="btnHome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="panelDesktop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1420, 813</value>
   </data>
-  <data name="btnHome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 27</value>
+  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 36</value>
   </data>
-  <data name="btnHome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 165</value>
-  </data>
-  <data name="btnHome.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnHome.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;lblDate.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;btnHome.Name" xml:space="preserve">
-    <value>btnHome</value>
+  <data name="&gt;&gt;panelDesktop.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
+  </data>
+  <data name="btnDashboard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTitleChildForm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTitleChildForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 34</value>
+  </data>
+  <data name="btnReturn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 520</value>
   </data>
   <data name="&gt;&gt;btnHome.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnHome.Parent" xml:space="preserve">
-    <value>panelMenu</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnHome.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="btnReturn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="panelMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+  <data name="&gt;&gt;iconCurrentChildForm.Parent" xml:space="preserve">
+    <value>panelTitleBar</value>
   </data>
-  <data name="panelMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panelMenu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 400, 5, 20</value>
-  </data>
-  <data name="panelMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>362, 893</value>
-  </data>
-  <data name="panelMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelMenu.Name" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;panelMenu.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;panelMenu.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;btnDashboard.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;panelMenu.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="btnMin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
   </data>
-  <data name="btnMin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAfFJREFUWEft
-        lztOw0AQhs2joIi9m0uA4AQgxKvh0aSHhp5jcIBISDQguEB6kAhFRLxOQKLhFEkoSLI5gJlJhsaZxFln
-        Fyj8Sb8UWd7/X2XlmVkvJyfHMXHFW9LKXxtEcrevgjMU/tahvxrH3iK99rtA8AJs5KSnxF1fiU9QPEGd
-        4TthcIxraLlbdORvweZCZjPTFYq3bij3ycY+cc1b7it5zYabKJRX6EW2dujWpATz57Gw7Kp+vRcF2c8H
-        fgRg+JgIsKGqlX/SyrFOEhw3xWRjVDoYY4vqKnlAcWaMSoloJA2tC77uTCUI6xxr6EKN4IhiZ6cXiXvW
-        zIF0KG4pdjawRcHCdtLIoTpYLSg+HeyjjIlTDeqFDYpPB1sSZ+JSWskSxaczmkp4o4+KH19erGQSruU8
-        UbDBc4pPB6aPU84E9S82OKjLPc7EpYyO+E8+kmZhneLToTLTSpo4VBszKX42aFrmzKxLR+KGYmcHx3TO
-        zIWgax1SrBkwDkWcoWU1Mw0LiFbFHcbQqnTd36a4bOBQyRnbUVCmmOzQyP8wbj637Iz8CF5w0DARMI+e
-        rF2afhheO60cd1A2Gq1MgYBNqJEvfPhUveIdh2zcgmUBx3SchCF42mDbwncy1zkbYIvCPorNHicSUgmf
-        GbevnJwcUzzvG4bOXK7xrccoAAAAAElFTkSuQmCC
-</value>
+  <data name="&gt;&gt;lblTitleChildForm.Name" xml:space="preserve">
+    <value>lblTitleChildForm</value>
   </data>
-  <data name="btnMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MenuForm</value>
   </data>
-  <data name="btnMin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1306, -5</value>
+  <data name="btnDashboard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
   </data>
-  <data name="btnMin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 44</value>
+  <data name="lblTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 18pt</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="btnMin.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="btnMin.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="btnBooks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 390</value>
   </data>
-  <data name="&gt;&gt;btnMin.Name" xml:space="preserve">
-    <value>btnMin</value>
+  <data name="&gt;&gt;panelShadow.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
+  </data>
+  <data name="&gt;&gt;btnBooks.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblTitleChildForm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnMin.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnMin.Parent" xml:space="preserve">
+  <data name="btnBooks.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1371, 3</value>
+  </data>
+  <data name="lblTime.Text" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="&gt;&gt;panelShadow.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblDate.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="&gt;&gt;btnIssue.Name" xml:space="preserve">
+    <value>btnIssue</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>WELCOME TO LIBRARY MANAGEMENT SYSTEM</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;panelShadow.Name" xml:space="preserve">
+    <value>panelShadow</value>
+  </data>
+  <data name="btnReturn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 65</value>
+  </data>
+  <data name="btnLogout.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;lblTitleChildForm.Parent" xml:space="preserve">
     <value>panelTitleBar</value>
   </data>
-  <data name="&gt;&gt;btnMin.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="btnDashboard.Text" xml:space="preserve">
+    <value> Dashboard</value>
+  </data>
+  <data name="lblTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;btnReturn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>918, 38</value>
+  </data>
+  <data name="&gt;&gt;panelTitleBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblDate.Name" xml:space="preserve">
+    <value>lblDate</value>
+  </data>
+  <data name="&gt;&gt;btnHome.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblTime.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panelMenu.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
+  </data>
+  <data name="lblTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 37</value>
+  </data>
+  <data name="panelShadow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 71</value>
+  </data>
+  <data name="lblDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnHome.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="btnReturn.Text" xml:space="preserve">
+    <value> Books Returned</value>
+  </data>
+  <data name="btnDashboard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnIssue.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnIssue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnIssue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 65</value>
+  </data>
+  <data name="iconCurrentChildForm.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;btnDashboard.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="lblTitleChildForm.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnDashboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnIssue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;lblTime.Name" xml:space="preserve">
+    <value>lblTime</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 16.2pt</value>
+  </data>
+  <data name="panelDesktop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 80</value>
+  </data>
+  <data name="btnReturn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="btnMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 44</value>
+  </data>
+  <data name="lblDate.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>16, 33</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
+    <value>panelTitleBar</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MenuForm</value>
+  </data>
+  <data name="btnDashboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAERJREFUWEft
+        1r0NACAIhNEbymldAAvCitpYWnsF30uuJ+EnCMiM4Yyq1naGAu4kAJ1VxXSGQ+RvAYDXbv4MBfjfcjQn
+        HT1zNz2HZUO6AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnDashboard.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 165</value>
+  </data>
+  <data name="&gt;&gt;lblDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iconCurrentChildForm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnDashboard.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 37</value>
+  </data>
+  <data name="btnHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 27</value>
+  </data>
+  <data name="&gt;&gt;panelTitleBar.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
+  </data>
+  <data name="btnReturn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;panelTitleBar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelTitleBar.Name" xml:space="preserve">
+    <value>panelTitleBar</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panelDesktop</value>
+  </data>
+  <data name="&gt;&gt;panelDesktop.Name" xml:space="preserve">
+    <value>panelDesktop</value>
+  </data>
+  <data name="&gt;&gt;lblDate.Parent" xml:space="preserve">
+    <value>panelDesktop</value>
+  </data>
+  <data name="btnIssue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 455</value>
+  </data>
+  <data name="panelMenu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 400, 5, 20</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnBooks.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAc9JREFUaEPt
+        mslLAmEYh6VD/0HXztG1/6BOow0lLaekKKic0YqkIIiQSKEFL0VhizmTtngoMiiDFlsIog4WLZTWuSA6
+        BW02b83wHQqCsUb9Wt4HnsvAfN/vOQgeRof8ZAJlZZkirzd5OX1Q4PURgTMM01SsZbPJNHU8VibLZ2XP
+        59vK7zecVdJKp0m6CPTAjounosDpwWs25JF56ryNnww7qh5jI1aIui1wNMABHIcAtkep+J2A20uPTRn/
+        KwPkFy49zRiQLDHgTwY8rA7CTbAv6T6H3R/ukU1JwJm3XTk42coR7++RlZ9jAAYkaNoCrme7P/3fotW7
+        5f4P98imJCCdYgAGaBQDMECjGIABGsUADNAoBmCARjEAAzSKARig0f8ZEB1pgr2+GthyVsJaZwVExjpg
+        s6eeikpAXWEBmaeO/MKMrQSmbKWw4OAUgw6zRMO5jmpJ3iPwhUYyTx1fYzFsCb0gvcSBNifr8+BvMsbs
+        dnsGmafOhJWNX50fkiPoshsYAl9DkZ9MSwx/o/H0YHFSImdQ5XBpGvzNJftkWmKI9Uy+aGGfQq6Wp/Co
+        E2gacrUqP+JxC5tD5iWGr47J9XJMl8gz7h/hVz41QNKCTvcK4XkY1WNxnZwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnLogout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 65</value>
+  </data>
+  <data name="btnLogout.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btnLogout.Name" xml:space="preserve">
+    <value>btnLogout</value>
   </data>
   <data name="btnClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="panelDesktop.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelDesktop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnLogout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 808</value>
+  </data>
+  <data name="&gt;&gt;lblTitleChildForm.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnReturn.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="btnLogout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="btnBooks.Text" xml:space="preserve">
+    <value> Books</value>
+  </data>
+  <data name="panelMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnIssue.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="&gt;&gt;btnLogout.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btnIssue.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="panelShadow.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnDashboard.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnIssue.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnClose.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="panelTitleBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1782, 893</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 113</value>
+  </data>
+  <data name="&gt;&gt;btnLogout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelMenu.Name" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLogout.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="btnHome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnBooks.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblTitleChildForm.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="iconCurrentChildForm.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panelDesktop</value>
+  </data>
+  <data name="lblDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnDashboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 65</value>
+  </data>
+  <data name="&gt;&gt;panelShadow.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnDashboard.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnBooks.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lblDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 18pt</value>
+  </data>
+  <data name="btnReturn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnIssue.Text" xml:space="preserve">
+    <value> Books Issued</value>
   </data>
   <data name="btnClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1282,208 +1451,25 @@
         +xewyy0Tnmu0keYWCII/AjQG1hvipYsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1371, 3</value>
+  <data name="btnBooks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 65</value>
   </data>
-  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 36</value>
-  </data>
-  <data name="btnClose.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
-    <value>btnClose</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
-    <value>panelTitleBar</value>
-  </data>
-  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblTitleChildForm.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTitleChildForm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTitleChildForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>68, 27</value>
-  </data>
-  <data name="lblTitleChildForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 34</value>
-  </data>
-  <data name="lblTitleChildForm.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="lblTitleChildForm.Text" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="&gt;&gt;lblTitleChildForm.Name" xml:space="preserve">
-    <value>lblTitleChildForm</value>
-  </data>
-  <data name="&gt;&gt;lblTitleChildForm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTitleChildForm.Parent" xml:space="preserve">
-    <value>panelTitleBar</value>
-  </data>
-  <data name="&gt;&gt;lblTitleChildForm.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="iconCurrentChildForm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="iconCurrentChildForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 27</value>
-  </data>
-  <data name="iconCurrentChildForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 41</value>
-  </data>
-  <data name="iconCurrentChildForm.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="iconCurrentChildForm.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;btnMin.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;iconCurrentChildForm.Name" xml:space="preserve">
-    <value>iconCurrentChildForm</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 215</value>
   </data>
-  <data name="&gt;&gt;iconCurrentChildForm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnLogout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
-  <data name="&gt;&gt;iconCurrentChildForm.Parent" xml:space="preserve">
-    <value>panelTitleBar</value>
-  </data>
-  <data name="&gt;&gt;iconCurrentChildForm.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panelTitleBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panelTitleBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>362, 0</value>
-  </data>
-  <data name="panelTitleBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1420, 71</value>
-  </data>
-  <data name="panelTitleBar.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panelTitleBar.Name" xml:space="preserve">
-    <value>panelTitleBar</value>
-  </data>
-  <data name="&gt;&gt;panelTitleBar.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;panelTitleBar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelTitleBar.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panelShadow.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panelShadow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>362, 71</value>
-  </data>
-  <data name="panelShadow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1420, 9</value>
-  </data>
-  <data name="panelShadow.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panelShadow.Name" xml:space="preserve">
-    <value>panelShadow</value>
-  </data>
-  <data name="&gt;&gt;panelShadow.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;panelShadow.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelShadow.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="lblDate.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblDate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 18pt</value>
-  </data>
-  <data name="lblDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;btnBooks.Parent" xml:space="preserve">
+    <value>panelMenu</value>
   </data>
   <data name="lblDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>559, 659</value>
   </data>
-  <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 37</value>
-  </data>
-  <data name="lblDate.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="lblDate.Text" xml:space="preserve">
-    <value>Date</value>
-  </data>
-  <data name="&gt;&gt;lblDate.Name" xml:space="preserve">
-    <value>lblDate</value>
-  </data>
-  <data name="&gt;&gt;lblDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDate.Parent" xml:space="preserve">
-    <value>panelDesktop</value>
-  </data>
-  <data name="&gt;&gt;lblDate.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="lblTime.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTime.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 18pt</value>
-  </data>
-  <data name="lblTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>638, 602</value>
-  </data>
-  <data name="lblTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 37</value>
-  </data>
-  <data name="lblTime.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lblTime.Text" xml:space="preserve">
-    <value>Time</value>
-  </data>
-  <data name="&gt;&gt;lblTime.Name" xml:space="preserve">
-    <value>lblTime</value>
-  </data>
-  <data name="&gt;&gt;lblTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTime.Parent" xml:space="preserve">
-    <value>panelDesktop</value>
-  </data>
-  <data name="&gt;&gt;lblTime.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="lblDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -2226,92 +2212,139 @@
         ixvMM//Z
 </value>
   </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="panelTitleBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1420, 71</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>520, 215</value>
+  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 306</value>
+  <data name="&gt;&gt;btnDashboard.Name" xml:space="preserve">
+    <value>btnDashboard</value>
   </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;iconCurrentChildForm.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>panelDesktop</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>638, 602</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Copperplate Gothic Bold, 19.8000011pt</value>
   </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>298, 113</value>
+  <data name="btnHome.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>918, 38</value>
+  <data name="panelTitleBar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="btnBooks.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>WELCOME TO LIBRARY MANAGEMENT SYSTEM</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblTitleChildForm.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panelDesktop</value>
+  <data name="&gt;&gt;btnMin.Name" xml:space="preserve">
+    <value>btnMin</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="btnIssue.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        /rhS+cTwHw8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;btnReturn.Name" xml:space="preserve">
+    <value>btnReturn</value>
+  </data>
+  <data name="panelMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 893</value>
+  </data>
+  <data name="btnReturn.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
   </data>
   <data name="panelDesktop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="panelDesktop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>362, 80</value>
+  <data name="panelMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
   </data>
-  <data name="panelDesktop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1420, 813</value>
+  <data name="lblTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="panelDesktop.TabIndex" type="System.Int32, mscorlib">
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnDashboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 325</value>
+  </data>
+  <data name="&gt;&gt;btnReturn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnLogout.Text" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="&gt;&gt;btnIssue.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnBooks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnIssue.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;btnHome.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="&gt;&gt;btnHome.Name" xml:space="preserve">
+    <value>btnHome</value>
+  </data>
+  <data name="&gt;&gt;iconCurrentChildForm.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;panelDesktop.Name" xml:space="preserve">
-    <value>panelDesktop</value>
+  <data name="btnBooks.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;panelDesktop.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
+  <data name="panelShadow.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lblTitleChildForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 27</value>
   </data>
   <data name="&gt;&gt;panelDesktop.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelDesktop.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="btnLogout.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -2319,37 +2352,4 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>16, 33</value>
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1782, 893</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 16.2pt</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>MenuForm</value>
-  </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
-  </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MenuForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
 </root>

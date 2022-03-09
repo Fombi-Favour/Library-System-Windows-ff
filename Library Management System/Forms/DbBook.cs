@@ -38,33 +38,60 @@ namespace Library_Management_System.Forms
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Added Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if(Properties.Settings.Default.lang == "en-US")
+                {
+                    MessageBox.Show("Added Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (Properties.Settings.Default.lang == "fr")
+                {
+                    MessageBox.Show("Ajouté avec Succès. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch(MySqlException ex)
             {
-                MessageBox.Show("Book not insert. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if(Properties.Settings.Default.lang == "en-US")
+                {
+                    MessageBox.Show("Book not insert. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (Properties.Settings.Default.lang == "fr")
+                {
+                    MessageBox.Show("Livre pas insérer. \n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             con.Close();
         }
 
-        public static void UpdateBook(Book bk, string sn)
+        public static void UpdateBook(Book bk, string id)
         {
-            string sql = "Update book set ID = @BookID, Name = @BookName, Author = @BookAuthor where sn = @BookSN";
+            string sql = "Update book set Name = @BookName, Author = @BookAuthor where ID = @BookID";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@BookSN", MySqlDbType.VarChar).Value = sn;
-            cmd.Parameters.Add("@BookID", MySqlDbType.VarChar).Value = bk.ID;
+            cmd.Parameters.Add("@BookID", MySqlDbType.VarChar).Value = id;
             cmd.Parameters.Add("@BookName", MySqlDbType.VarChar).Value = bk.Name;
             cmd.Parameters.Add("@BookAuthor", MySqlDbType.VarChar).Value = bk.Author;
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Updated Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if(Properties.Settings.Default.lang == "en-US")
+                {
+                    MessageBox.Show("Updated Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (Properties.Settings.Default.lang == "fr")
+                {
+                    MessageBox.Show("Mise à Jour avec Succès. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("Book not update. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if(Properties.Settings.Default.lang == "en-US")
+                {
+                    MessageBox.Show("Book not update. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (Properties.Settings.Default.lang == "fr")
+                {
+                    MessageBox.Show("Livre non mise à jour. \n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             con.Close();
         }
@@ -80,11 +107,25 @@ namespace Library_Management_System.Forms
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Deleted Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if(Properties.Settings.Default.lang == "en-US")
+                {
+                    MessageBox.Show("Deleted Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (Properties.Settings.Default.lang == "fr")
+                {
+                    MessageBox.Show("Suprimé avec Succès. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("Book not delete. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if(Properties.Settings.Default.lang == "en-US")
+                {
+                    MessageBox.Show("Book not delete. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (Properties.Settings.Default.lang == "fr")
+                {
+                    MessageBox.Show("Livre pas supprimer. \n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             con.Close();
         }

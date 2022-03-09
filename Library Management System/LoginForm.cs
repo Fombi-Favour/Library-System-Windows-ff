@@ -93,7 +93,14 @@ namespace Library_Management_System
                 }
                 else
                 {
-                    MessageBox.Show("Unable to log in. Try again!!");
+                    if(Properties.Settings.Default.lang == "en-US")
+                    {
+                        MessageBox.Show("Unable to log in. Try again!!");
+                    }
+                    else if (Properties.Settings.Default.lang == "fr")
+                    {
+                        MessageBox.Show("Impossible de se connecter. Essayer à nouveau!!");
+                    }
                     conn.Close();
                 }
             }catch (Exception ex)

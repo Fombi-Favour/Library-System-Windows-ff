@@ -61,6 +61,7 @@
             // 
             // panelMenu
             // 
+            resources.ApplyResources(this.panelMenu, "panelMenu");
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.panelMenu.Controls.Add(this.btnLogout);
             this.panelMenu.Controls.Add(this.btnReturn);
@@ -68,7 +69,6 @@
             this.panelMenu.Controls.Add(this.btnBooks);
             this.panelMenu.Controls.Add(this.btnDashboard);
             this.panelMenu.Controls.Add(this.btnHome);
-            resources.ApplyResources(this.panelMenu, "panelMenu");
             this.panelMenu.Name = "panelMenu";
             // 
             // btnLogout
@@ -125,12 +125,12 @@
             // 
             // panelTitleBar
             // 
+            resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.panelTitleBar.Controls.Add(this.btnMin);
             this.panelTitleBar.Controls.Add(this.btnClose);
             this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
             this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
-            resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -156,25 +156,25 @@
             // 
             // iconCurrentChildForm
             // 
-            this.iconCurrentChildForm.Image = global::Library_Management_System.Properties.Resources.icons8_home_32;
             resources.ApplyResources(this.iconCurrentChildForm, "iconCurrentChildForm");
+            this.iconCurrentChildForm.Image = global::Library_Management_System.Properties.Resources.icons8_home_32;
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
             this.iconCurrentChildForm.TabStop = false;
             // 
             // panelShadow
             // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             resources.ApplyResources(this.panelShadow, "panelShadow");
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.panelShadow.Name = "panelShadow";
             // 
             // panelDesktop
             // 
+            resources.ApplyResources(this.panelDesktop, "panelDesktop");
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(74)))));
             this.panelDesktop.Controls.Add(this.lblDate);
             this.panelDesktop.Controls.Add(this.lblTime);
             this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Controls.Add(this.label1);
-            resources.ApplyResources(this.panelDesktop, "panelDesktop");
             this.panelDesktop.Name = "panelDesktop";
             // 
             // lblDate

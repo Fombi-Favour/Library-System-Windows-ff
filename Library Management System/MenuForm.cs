@@ -134,7 +134,7 @@ namespace Library_Management_System
                     this.Close();
                 }
             }
-            else if (Properties.Settings.Default.lang == "fr")
+            else
             {
                 if (MessageBox.Show("Êtes-vous sûr de vous déconnecter?", "Avertissement",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)

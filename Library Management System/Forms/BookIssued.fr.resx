@@ -120,13 +120,6 @@
   <data name="btnHome.Text" xml:space="preserve">
     <value>ACCUEIL</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 39</value>
-  </data>
-  <data name="btnNew.Text" xml:space="preserve">
-    <value>NOUVEAU</value>
-  </data>
   <data name="Column2.HeaderText" xml:space="preserve">
     <value>Nom d’élève</value>
   </data>
@@ -138,5 +131,12 @@
   </data>
   <data name="Column5.HeaderText" xml:space="preserve">
     <value>LivreID</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 39</value>
+  </data>
+  <data name="btnNew.Text" xml:space="preserve">
+    <value>NOUVEAU</value>
   </data>
 </root>

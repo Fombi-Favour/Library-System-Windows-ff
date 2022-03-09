@@ -1,6 +1,6 @@
 ﻿namespace Library_Management_System.Forms
 {
-    partial class AddIssueForm
+    partial class AddReturnForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddIssueForm));
-            this.panelTileBar = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddReturnForm));
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblText = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtDateReturn = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtDateIssue = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.txtBkid = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtClass = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnIssue = new Guna.UI2.WinForms.Guna2Button();
+            this.btnReturn = new Guna.UI2.WinForms.Guna2Button();
             this.txtStudName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtBkName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panelTileBar.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelTileBar
+            // panel1
             // 
-            resources.ApplyResources(this.panelTileBar, "panelTileBar");
-            this.panelTileBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(74)))));
-            this.panelTileBar.Controls.Add(this.btnClose);
-            this.panelTileBar.Controls.Add(this.lblText);
-            this.panelTileBar.Name = "panelTileBar";
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(74)))));
+            this.panel1.Controls.Add(this.btnClose);
+            this.panel1.Controls.Add(this.lblText);
+            this.panel1.Name = "panel1";
             // 
             // btnClose
             // 
@@ -72,28 +74,40 @@
             this.lblText.ForeColor = System.Drawing.Color.Silver;
             this.lblText.Name = "lblText";
             // 
-            // panel1
+            // panel2
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.txtDateIssue);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtBkid);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtClass);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnIssue);
-            this.panel1.Controls.Add(this.txtStudName);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txtBkName);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Name = "panel1";
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.txtDateReturn);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.txtDateIssue);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.txtBkid);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.txtClass);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.btnReturn);
+            this.panel2.Controls.Add(this.txtStudName);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.txtBkName);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Name = "panel2";
+            // 
+            // txtDateReturn
+            // 
+            resources.ApplyResources(this.txtDateReturn, "txtDateReturn");
+            this.txtDateReturn.Name = "txtDateReturn";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.label8.Name = "label8";
             // 
             // txtDateIssue
             // 
             resources.ApplyResources(this.txtDateIssue, "txtDateIssue");
             this.txtDateIssue.Name = "txtDateIssue";
-            this.txtDateIssue.Value = new System.DateTime(2022, 3, 9, 0, 0, 0, 0);
             // 
             // label5
             // 
@@ -151,17 +165,16 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.label1.Name = "label1";
             // 
-            // btnIssue
+            // btnReturn
             // 
-            resources.ApplyResources(this.btnIssue, "btnIssue");
-            this.btnIssue.BorderRadius = 13;
-            this.btnIssue.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnIssue.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnIssue.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnIssue.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnIssue.ForeColor = System.Drawing.Color.White;
-            this.btnIssue.Name = "btnIssue";
-            this.btnIssue.Click += new System.EventHandler(this.btnIssue_Click);
+            resources.ApplyResources(this.btnReturn, "btnReturn");
+            this.btnReturn.BorderRadius = 13;
+            this.btnReturn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReturn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReturn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReturn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReturn.ForeColor = System.Drawing.Color.White;
+            this.btnReturn.Name = "btnReturn";
             // 
             // txtStudName
             // 
@@ -213,39 +226,41 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.label2.Name = "label2";
             // 
-            // AddIssueForm
+            // AddReturnForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelTileBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AddIssueForm";
-            this.panelTileBar.ResumeLayout(false);
-            this.panelTileBar.PerformLayout();
+            this.Name = "AddReturnForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelTileBar;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DateTimePicker txtDateReturn;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker txtDateIssue;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtBkid;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtClass;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button btnIssue;
+        private Guna.UI2.WinForms.Guna2Button btnReturn;
         private Guna.UI2.WinForms.Guna2TextBox txtStudName;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtBkName;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label lblText;
     }
 }

@@ -65,10 +65,21 @@ namespace Library_Management_System.Forms
             if(e.ColumnIndex == 1)
             {
                 //Delete
-                if(MessageBox.Show("Are you sure to delete?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                if(Properties.Settings.Default.lang == "en-US")
                 {
-                    DbBook.DeleteBook(GVlist.Rows[e.RowIndex].Cells[2].Value.ToString());
-                    Display();
+                    if (MessageBox.Show("Are you sure to delete?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    {
+                        DbBook.DeleteBook(GVlist.Rows[e.RowIndex].Cells[2].Value.ToString());
+                        Display();
+                    }
+                }
+                else if (Properties.Settings.Default.lang == "fr")
+                {
+                    if (MessageBox.Show("Êtes-vous sûr de supprimer?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    {
+                        DbBook.DeleteBook(GVlist.Rows[e.RowIndex].Cells[2].Value.ToString());
+                        Display();
+                    }
                 }
                 return;
             }
