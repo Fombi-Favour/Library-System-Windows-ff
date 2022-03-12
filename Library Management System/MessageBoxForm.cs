@@ -30,6 +30,18 @@ namespace Library_Management_System
         }
 
         //Constructors
+        public MessageBoxForm(string text)
+        {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Settings.Default.lang);
+            InitializeComponent();
+            InitializeItems();
+            this.PrimaryColor = primaryColor;
+            this.labelMessage.Text = text;
+            this.labelCaption.Text = "";
+            SetFormSize();
+            SetButtons(MessageBoxButtons.OK, MessageBoxDefaultButton.Button1);//Set Default Buttons
+        }
+
         public MessageBoxForm(string text, string caption, MessageBoxButtons buttons, MessageBoxIcon icon)
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Settings.Default.lang);
@@ -90,7 +102,7 @@ namespace Library_Management_System
 
                     //Cancel Button
                     button2.Visible = true;
-                    button2.Location = new Point((xCenter - (button1.Width / 2) + 5), yCenter);
+                    button2.Location = new Point((xCenter + (button1.Width / 2) + 5), yCenter);
                     button2.Text = "Cancel";
                     button2.DialogResult = DialogResult.Cancel;//Set DialogResult
                     button2.BackColor = Color.DimGray;
@@ -113,7 +125,7 @@ namespace Library_Management_System
 
                     //No Button
                     button2.Visible = true;
-                    button2.Location = new Point(xCenter - (button1.Width / 2) + 5, yCenter);
+                    button2.Location = new Point(xCenter + (button1.Width / 2) + 5, yCenter);
                     button2.Text = "No";
                     button2.DialogResult = DialogResult.No;//Set DialogResult
                     button2.BackColor = Color.IndianRed;

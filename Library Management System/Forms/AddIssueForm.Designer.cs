@@ -33,8 +33,6 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.lblText = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtDateIssue = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtBkid = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtClass = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,23 +42,25 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtBkName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.IssueDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             this.panelTileBar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTileBar
             // 
-            resources.ApplyResources(this.panelTileBar, "panelTileBar");
             this.panelTileBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(74)))));
             this.panelTileBar.Controls.Add(this.btnClose);
             this.panelTileBar.Controls.Add(this.lblText);
+            resources.ApplyResources(this.panelTileBar, "panelTileBar");
             this.panelTileBar.Name = "panelTileBar";
             // 
             // btnClose
             // 
-            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
+            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Name = "btnClose";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -74,9 +74,8 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.txtDateIssue);
+            this.panel1.Controls.Add(this.IssueDate);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtBkid);
             this.panel1.Controls.Add(this.label4);
@@ -87,19 +86,8 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtBkName);
             this.panel1.Controls.Add(this.label2);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            // 
-            // txtDateIssue
-            // 
-            resources.ApplyResources(this.txtDateIssue, "txtDateIssue");
-            this.txtDateIssue.Name = "txtDateIssue";
-            this.txtDateIssue.Value = new System.DateTime(2022, 3, 9, 0, 0, 0, 0);
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label5.Name = "label5";
             // 
             // txtBkid
             // 
@@ -213,6 +201,23 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.label2.Name = "label2";
             // 
+            // IssueDate
+            // 
+            this.IssueDate.Checked = true;
+            resources.ApplyResources(this.IssueDate, "IssueDate");
+            this.IssueDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(97)))), ((int)(((byte)(232)))));
+            this.IssueDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.IssueDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.IssueDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.IssueDate.Name = "IssueDate";
+            this.IssueDate.Value = new System.DateTime(2022, 3, 11, 16, 1, 2, 782);
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.label5.Name = "label5";
+            // 
             // AddIssueForm
             // 
             resources.ApplyResources(this, "$this");
@@ -236,8 +241,6 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker txtDateIssue;
-        private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtBkid;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtClass;
@@ -247,5 +250,7 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtBkName;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker IssueDate;
+        private System.Windows.Forms.Label label5;
     }
 }

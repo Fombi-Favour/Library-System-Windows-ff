@@ -21,7 +21,7 @@ namespace Library_Management_System.Forms
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("MySQL Connection! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                var result = RJMessageBox.Show("MySQL Connection! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return conn;
         }
@@ -40,22 +40,22 @@ namespace Library_Management_System.Forms
                 cmd.ExecuteNonQuery();
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("Added Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    var result = RJMessageBox.Show("Added Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("Ajouté avec Succès. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    var result = RJMessageBox.Show("Ajouté avec Succès. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch(MySqlException ex)
             {
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("Book not insert. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    var result = RJMessageBox.Show("Book not insert. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("Livre pas insérer. \n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    var result = RJMessageBox.Show("Livre pas insérer. \n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             con.Close();
@@ -75,22 +75,22 @@ namespace Library_Management_System.Forms
                 cmd.ExecuteNonQuery();
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("Updated Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    var result = RJMessageBox.Show("Updated Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("Mise à Jour avec Succès. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    var result = RJMessageBox.Show("Mise à Jour avec Succès. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (MySqlException ex)
             {
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("Book not update. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    var result = RJMessageBox.Show("Book not update. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("Livre non mise à jour. \n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    var result = RJMessageBox.Show("Livre non mise à jour. \n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             con.Close();
@@ -109,22 +109,22 @@ namespace Library_Management_System.Forms
                 cmd.ExecuteNonQuery();
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("Deleted Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    var result = RJMessageBox.Show("Deleted Succesfully. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("Suprimé avec Succès. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    var result = RJMessageBox.Show("Suprimé avec Succès. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (MySqlException ex)
             {
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("Book not delete. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    var result = RJMessageBox.Show("Book not delete. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("Livre pas supprimer. \n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    var result = RJMessageBox.Show("Livre pas supprimer. \n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             con.Close();

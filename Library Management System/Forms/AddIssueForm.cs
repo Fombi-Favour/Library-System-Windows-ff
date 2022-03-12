@@ -13,10 +13,14 @@ namespace Library_Management_System.Forms
 {
     public partial class AddIssueForm : Form
     {
-        public AddIssueForm()
+        private readonly BookIssued _parent;
+        public string studName, studClass, bookName, bookID;
+
+        public AddIssueForm(BookIssued parent)
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Settings.Default.lang);
             InitializeComponent();
+            _parent = parent;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -24,9 +28,31 @@ namespace Library_Management_System.Forms
             this.Close();
         }
 
+        public void UpdateInfo()
+        {
+            if(Properties.Settings.Default.lang == "en-US")
+            {
+                lblText.Text = "Update Book Issue";
+                btnIssue.Text = "UPDATE";
+                txtStudName.Text = studName;
+                txtClass.Text = studClass;
+                txtBkName.Text = bookName;
+                txtBkid.Text = bookID;
+            }
+            else if(Properties.Settings.Default.lang == "fr")
+            {
+                lblText.Text = "Mettre à Jour le Livre Emprunter";
+                btnIssue.Text = "MISE À JOUR";
+                txtStudName.Text = studName;
+                txtClass.Text = studClass;
+                txtBkName.Text = bookName;
+                txtBkid.Text = bookID;
+            }
+        }
+
         public void Clear()
         {
-            txtStudName.Text = txtClass.Text = txtBkName.Text = txtBkid.Text = txtDateIssue.Text = string.Empty;
+            txtStudName.Text = txtClass.Text = txtBkName.Text = txtBkid.Text = string.Empty;
         }
 
         private void btnIssue_Click(object sender, EventArgs e)
@@ -35,11 +61,11 @@ namespace Library_Management_System.Forms
             {
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("Student name is empty ( > 3).");
+                    DialogResult result = RJMessageBox.Show("Student name is empty ( > 3).");
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("Nom d'élève est vide ( > 3).");
+                    DialogResult result = RJMessageBox.Show("Nom d'élève est vide ( > 3).");
                 }
 
                 return;
@@ -48,11 +74,11 @@ namespace Library_Management_System.Forms
             {
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("Student class is empty ( > 1).");
+                    DialogResult result = RJMessageBox.Show("Student class is empty ( > 1).");
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("Classe d'élève est vide ( > 1).");
+                    DialogResult result = RJMessageBox.Show("Classe d'élève est vide ( > 1).");
                 }
 
                 return;
@@ -61,11 +87,11 @@ namespace Library_Management_System.Forms
             {
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("Book name is empty ( > 1).");
+                    DialogResult result = RJMessageBox.Show("Book name is empty ( > 1).");
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("Nom du livre est vide ( > 1).");
+                    DialogResult result = RJMessageBox.Show("Nom du livre est vide ( > 1).");
                 }
 
                 return;
@@ -74,33 +100,28 @@ namespace Library_Management_System.Forms
             {
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("BookID is empty ( > 1).");
+                    DialogResult result = RJMessageBox.Show("BookID is empty ( > 1).");
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("LivreID est vide ( > 1).");
+                    DialogResult result = RJMessageBox.Show("LivreID est vide ( > 1).");
                 }
 
                 return;
             }
-            if (txtDateIssue.Text.Trim().Length == 0)
-            {
-                if(Properties.Settings.Default.lang == "en-US")
-                {
-                    MessageBox.Show("Date issue is empty ( > 1).");
-                }
-                else if (Properties.Settings.Default.lang == "en-US")
-                {
-                    MessageBox.Show("Date empruntée est vide ( > 1).");
-                }
 
-                return;
-            }
-            if (btnIssue.Text == "SAVE" || btnIssue.Text == "ENREGISTRER")
+            if(btnIssue.Text == "SAVE" || btnIssue.Text == "ENREGISTRER")
             {
-                Issue iss = new Issue(txtStudName.Text.Trim(), txtClass.Text.Trim(), txtBkName.Text.Trim(), txtBkid.Text.Trim(), txtDateIssue.Value.ToLongDateString());
+                Issue iss = new Issue(txtStudName.Text.Trim(), txtClass.Text.Trim(), txtBkName.Text.Trim(), txtBkid.Text.Trim());
                 DbIssue.AddIssue(iss);
+                Clear();
             }
+            if(btnIssue.Text == "UPDATE" || btnIssue.Text == "MISE À JOUR")
+            {
+                Issue iss = new Issue(txtStudName.Text.Trim(), txtClass.Text.Trim(), txtBkName.Text.Trim(), txtBkid.Text.Trim());
+                DbIssue.UpdateIssue(iss, bookID);
+            }
+            _parent.Display();
         }
     }
 }

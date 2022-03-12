@@ -95,17 +95,29 @@ namespace Library_Management_System
                 {
                     if(Properties.Settings.Default.lang == "en-US")
                     {
-                        MessageBox.Show("Unable to log in. Try again!!");
+                        var result = RJMessageBox.Show("Unable to log in. Try again!!");
                     }
                     else if (Properties.Settings.Default.lang == "fr")
                     {
-                        MessageBox.Show("Impossible de se connecter. Essayer à nouveau!!");
+                        var result = RJMessageBox.Show("Impossible de se connecter. Essayer à nouveau!!");
                     }
                     conn.Close();
                 }
-            }catch (Exception ex)
+                if (txtuser.Text == "" || txtpass.Text == "")
+                {
+                    if (Properties.Settings.Default.lang == "en-US")
+                    {
+                        var result = RJMessageBox.Show("Fill in the information", "Missing", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if(Properties.Settings.Default.lang == "fr")
+                    {
+                        var result = RJMessageBox.Show("Remplir des informations", "Manquant", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                var result = RJMessageBox.Show(ex.Message);
             }
         }
     }

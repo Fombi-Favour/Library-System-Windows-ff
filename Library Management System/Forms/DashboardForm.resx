@@ -293,37 +293,37 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblBooks.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 20pt, style=Bold</value>
+  <data name="lblBooks.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 24pt, style=Bold</value>
   </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblBooks.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblBooks.Location" type="System.Drawing.Point, System.Drawing">
     <value>94, 54</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 40</value>
+  <data name="lblBooks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 47</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblBooks.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="lblBooks.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;lblBooks.Name" xml:space="preserve">
+    <value>lblBooks</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblBooks.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblBooks.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblBooks.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -545,37 +545,37 @@
   <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblStudents.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 20pt, style=Bold</value>
+  <data name="lblStudents.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 24pt, style=Bold</value>
   </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblStudents.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblStudents.Location" type="System.Drawing.Point, System.Drawing">
     <value>102, 54</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 40</value>
+  <data name="lblStudents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 47</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblStudents.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="lblStudents.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;lblStudents.Name" xml:space="preserve">
+    <value>lblStudents</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblStudents.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblStudents.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblStudents.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
@@ -606,7 +606,7 @@
     <value>True</value>
   </data>
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt, style=Bold</value>
+    <value>Century Gothic, 13.2000008pt, style=Bold</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -615,7 +615,7 @@
     <value>5, 128</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 23</value>
+    <value>240, 27</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -638,37 +638,37 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblIssue.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 20pt, style=Bold</value>
+  <data name="lblIssue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 24pt, style=Bold</value>
   </data>
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblIssue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 60</value>
+  <data name="lblIssue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 60</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 40</value>
+  <data name="lblIssue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 47</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblIssue.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
+  <data name="lblIssue.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="&gt;&gt;lblIssue.Name" xml:space="preserve">
+    <value>lblIssue</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblIssue.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblIssue.Parent" xml:space="preserve">
     <value>panel4</value>
   </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblIssue.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -707,7 +707,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 51</value>
+    <value>20, 51</value>
   </data>
   <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 77</value>
@@ -734,10 +734,10 @@
     <value>Right</value>
   </data>
   <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 0</value>
+    <value>245, 0</value>
   </data>
   <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 176</value>
+    <value>126, 176</value>
   </data>
   <data name="panel8.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -782,7 +782,7 @@
     <value>True</value>
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 11pt, style=Bold</value>
+    <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -791,7 +791,7 @@
     <value>5, 128</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 23</value>
+    <value>241, 23</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -835,7 +835,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 51</value>
+    <value>19, 51</value>
   </data>
   <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 77</value>
@@ -862,10 +862,10 @@
     <value>Right</value>
   </data>
   <data name="panel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>238, 0</value>
+    <value>252, 0</value>
   </data>
   <data name="panel9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 176</value>
+    <value>119, 176</value>
   </data>
   <data name="panel9.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -882,37 +882,37 @@
   <data name="&gt;&gt;panel9.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblreturn.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 20pt, style=Bold</value>
+  <data name="lblreturn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 24pt, style=Bold</value>
   </data>
-  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblreturn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 60</value>
+  <data name="lblreturn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 60</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 40</value>
+  <data name="lblreturn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 47</value>
   </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblreturn.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="label8.Text" xml:space="preserve">
+  <data name="lblreturn.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
+  <data name="&gt;&gt;lblreturn.Name" xml:space="preserve">
+    <value>lblreturn</value>
   </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblreturn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblreturn.Parent" xml:space="preserve">
     <value>panel5</value>
   </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblreturn.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">

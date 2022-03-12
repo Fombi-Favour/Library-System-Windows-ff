@@ -39,8 +39,8 @@
     <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
       <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
-      <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    <Reference Include="Google.Protobuf, Version=3.20.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.20.0-rc1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.1\lib\net40\Guna.UI2.dll</HintPath>
@@ -56,6 +56,9 @@
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.28\lib\net48\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlKata, Version=2.3.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SqlKata.2.3.7\lib\netstandard2.0\SqlKata.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -116,12 +119,6 @@
     <Compile Include="Forms\AddIssueForm.Designer.cs">
       <DependentUpon>AddIssueForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AddReturnForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddReturnForm.Designer.cs">
-      <DependentUpon>AddReturnForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Book.cs" />
     <Compile Include="Forms\BookForm.cs">
       <SubType>Form</SubType>
@@ -149,7 +146,9 @@
     </Compile>
     <Compile Include="Forms\DbBook.cs" />
     <Compile Include="Forms\DbIssue.cs" />
+    <Compile Include="Forms\DbReturn.cs" />
     <Compile Include="Forms\Issue.cs" />
+    <Compile Include="Forms\Return.cs" />
     <Compile Include="LanguageForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +187,7 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="RJMessageBox.cs" />
     <Compile Include="User.cs" />
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
@@ -215,12 +215,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddIssueForm.resx">
       <DependentUpon>AddIssueForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddReturnForm.fr.resx">
-      <DependentUpon>AddReturnForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddReturnForm.resx">
-      <DependentUpon>AddReturnForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BookForm.fr.resx">
       <DependentUpon>BookForm.cs</DependentUpon>

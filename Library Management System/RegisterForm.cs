@@ -84,12 +84,23 @@ namespace Library_Management_System
                 }
                 else
                 {
-                    MessageBox.Show(msg_false);
+                    DialogResult result = RJMessageBox.Show(msg_false);
+                }
+                if (txtsch.Text == "" || txtuser.Text == "" || txtpass.Text == "")
+                {
+                    if (Properties.Settings.Default.lang == "en-US")
+                    {
+                        var result = RJMessageBox.Show("Fill in the information", "Missing", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (Properties.Settings.Default.lang == "fr")
+                    {
+                        var result = RJMessageBox.Show("Remplir des informations", "Manquant", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                var result = RJMessageBox.Show(ex.Message);
             }
             finally
             {

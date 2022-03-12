@@ -54,11 +54,11 @@ namespace Library_Management_System.Forms
             {
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("BookID is empty ( > 3).");
+                    DialogResult result = RJMessageBox.Show("BookID is empty ( > 3).");
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("LivreID est vide ( > 3).");
+                    DialogResult result = RJMessageBox.Show("LivreID est vide ( > 3).");
                 }
 
                 return;
@@ -67,11 +67,11 @@ namespace Library_Management_System.Forms
             {
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("Book name is empty ( < 1).");
+                    DialogResult result = RJMessageBox.Show("Book name is empty ( < 1).");
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("Nom du livre est vide ( < 1).");
+                    DialogResult result = RJMessageBox.Show("Nom du livre est vide ( < 1).");
                 }
 
                 return;
@@ -80,11 +80,11 @@ namespace Library_Management_System.Forms
             {
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    MessageBox.Show("Book author is empty ( > 1).");
+                    DialogResult result = RJMessageBox.Show("Book author is empty ( > 1).");
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    MessageBox.Show("L'auteur du livre est vide ( > 1).");
+                    DialogResult result = RJMessageBox.Show("L'auteur du livre est vide ( > 1).");
                 }
 
                 return;

@@ -67,7 +67,8 @@ namespace Library_Management_System.Forms
                 //Delete
                 if(Properties.Settings.Default.lang == "en-US")
                 {
-                    if (MessageBox.Show("Are you sure to delete?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    var result = RJMessageBox.Show("Are you sure to delete?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if ( result == DialogResult.Yes)
                     {
                         DbBook.DeleteBook(GVlist.Rows[e.RowIndex].Cells[2].Value.ToString());
                         Display();
@@ -75,13 +76,26 @@ namespace Library_Management_System.Forms
                 }
                 else if (Properties.Settings.Default.lang == "fr")
                 {
-                    if (MessageBox.Show("Êtes-vous sûr de supprimer?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    var result = RJMessageBox.Show("Êtes-vous sûr de supprimer?", "Supprimer", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
                     {
                         DbBook.DeleteBook(GVlist.Rows[e.RowIndex].Cells[2].Value.ToString());
                         Display();
                     }
                 }
                 return;
+            }
+        }
+
+        private void BookForm_Load(object sender, EventArgs e)
+        {
+            if(Properties.Settings.Default.lang == "en-US")
+            {
+                txtSearch.PlaceholderText = "Search";
+            }
+            else if (Properties.Settings.Default.lang == "fr")
+            {
+                txtSearch.PlaceholderText = "Chercher";
             }
         }
     }

@@ -127,8 +127,8 @@ namespace Library_Management_System
             ActivateButton(sender, RGBColors.color5);
             if(Properties.Settings.Default.lang == "en-US")
             {
-                if (MessageBox.Show("Are you sure to logout?", "Warning",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                var result = RJMessageBox.Show("Are you sure to logout?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
                 {
                     new LoginForm().ShowDialog();
                     this.Close();
@@ -136,8 +136,8 @@ namespace Library_Management_System
             }
             else
             {
-                if (MessageBox.Show("Êtes-vous sûr de vous déconnecter?", "Avertissement",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                var result = RJMessageBox.Show("Êtes-vous sûr de vous déconnecter?", "Avertissement", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
                 {
                     new LoginForm().Show();
                     this.Close();

@@ -36,24 +36,24 @@
             this.lblName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblBooks = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblStudents = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblIssue = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblreturn = new System.Windows.Forms.Label();
             this.btnAbt = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblDate = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -104,7 +104,7 @@
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lblBooks);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Name = "panel2";
             // 
@@ -114,11 +114,11 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label2.Name = "label2";
             // 
-            // label1
+            // lblBooks
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.lblBooks, "lblBooks");
+            this.lblBooks.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lblBooks.Name = "lblBooks";
             // 
             // panel6
             // 
@@ -139,7 +139,7 @@
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.lblStudents);
             this.panel3.Name = "panel3";
             // 
             // label3
@@ -161,18 +161,18 @@
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
             // 
-            // label4
+            // lblStudents
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.lblStudents, "lblStudents");
+            this.lblStudents.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lblStudents.Name = "lblStudents";
             // 
             // panel4
             // 
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.BackColor = System.Drawing.SystemColors.Control;
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.lblIssue);
             this.panel4.Controls.Add(this.panel8);
             this.panel4.Name = "panel4";
             // 
@@ -182,11 +182,11 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label5.Name = "label5";
             // 
-            // label6
+            // lblIssue
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label6.Name = "label6";
+            resources.ApplyResources(this.lblIssue, "lblIssue");
+            this.lblIssue.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lblIssue.Name = "lblIssue";
             // 
             // panel8
             // 
@@ -207,7 +207,7 @@
             this.panel5.BackColor = System.Drawing.SystemColors.Control;
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.panel9);
-            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.lblreturn);
             this.panel5.Name = "panel5";
             // 
             // label7
@@ -229,11 +229,11 @@
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.TabStop = false;
             // 
-            // label8
+            // lblreturn
             // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label8.Name = "label8";
+            resources.ApplyResources(this.lblreturn, "lblreturn");
+            this.lblreturn.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lblreturn.Name = "lblreturn";
             // 
             // btnAbt
             // 
@@ -272,6 +272,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "DashboardForm";
+            this.Load += new System.EventHandler(this.DashboardForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -312,17 +313,17 @@
         private System.Windows.Forms.Panel panel9;
         private Guna.UI2.WinForms.Guna2GradientButton btnAbt;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblBooks;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblStudents;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblIssue;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblreturn;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Timer timer1;
     }
