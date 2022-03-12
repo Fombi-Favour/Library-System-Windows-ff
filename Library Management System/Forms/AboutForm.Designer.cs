@@ -35,11 +35,26 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btnEmail = new System.Windows.Forms.PictureBox();
+            this.btnGithub = new System.Windows.Forms.PictureBox();
+            this.btnInstagram = new System.Windows.Forms.PictureBox();
+            this.btnLinkedIn = new System.Windows.Forms.PictureBox();
+            this.btnTwitter = new System.Windows.Forms.PictureBox();
+            this.btnFacebook = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelTitleBar.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGithub)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInstagram)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLinkedIn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTwitter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFacebook)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -49,9 +64,9 @@
             // 
             // panelTitleBar
             // 
-            resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
             this.panelTitleBar.Controls.Add(this.btnClose);
             this.panelTitleBar.Controls.Add(this.label1);
+            resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
             this.panelTitleBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(113)))), ((int)(((byte)(219)))));
             this.panelTitleBar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(77)))), ((int)(((byte)(227)))));
             this.panelTitleBar.Name = "panelTitleBar";
@@ -59,8 +74,8 @@
             // 
             // btnClose
             // 
-            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(77)))), ((int)(((byte)(227)))));
+            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Name = "btnClose";
@@ -70,18 +85,90 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
             // guna2GradientPanel2
             // 
-            resources.ApplyResources(this.guna2GradientPanel2, "guna2GradientPanel2");
+            this.guna2GradientPanel2.Controls.Add(this.label5);
+            this.guna2GradientPanel2.Controls.Add(this.pictureBox7);
+            this.guna2GradientPanel2.Controls.Add(this.btnEmail);
+            this.guna2GradientPanel2.Controls.Add(this.btnGithub);
+            this.guna2GradientPanel2.Controls.Add(this.btnInstagram);
+            this.guna2GradientPanel2.Controls.Add(this.btnLinkedIn);
+            this.guna2GradientPanel2.Controls.Add(this.btnTwitter);
+            this.guna2GradientPanel2.Controls.Add(this.btnFacebook);
             this.guna2GradientPanel2.Controls.Add(this.label4);
             this.guna2GradientPanel2.Controls.Add(this.label3);
             this.guna2GradientPanel2.Controls.Add(this.label2);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(100)))), ((int)(((byte)(237)))));
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(61)))), ((int)(((byte)(224)))));
+            resources.ApplyResources(this.guna2GradientPanel2, "guna2GradientPanel2");
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Name = "label5";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.pictureBox7, "pictureBox7");
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.TabStop = false;
+            // 
+            // btnEmail
+            // 
+            this.btnEmail.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnEmail, "btnEmail");
+            this.btnEmail.Name = "btnEmail";
+            this.btnEmail.TabStop = false;
+            this.btnEmail.Click += new System.EventHandler(this.btnEmail_Click);
+            // 
+            // btnGithub
+            // 
+            this.btnGithub.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnGithub, "btnGithub");
+            this.btnGithub.Name = "btnGithub";
+            this.btnGithub.TabStop = false;
+            this.btnGithub.Click += new System.EventHandler(this.btnGithub_Click);
+            // 
+            // btnInstagram
+            // 
+            this.btnInstagram.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnInstagram, "btnInstagram");
+            this.btnInstagram.Name = "btnInstagram";
+            this.btnInstagram.TabStop = false;
+            this.btnInstagram.Click += new System.EventHandler(this.btnInstagram_Click);
+            // 
+            // btnLinkedIn
+            // 
+            this.btnLinkedIn.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnLinkedIn, "btnLinkedIn");
+            this.btnLinkedIn.Name = "btnLinkedIn";
+            this.btnLinkedIn.TabStop = false;
+            this.btnLinkedIn.Click += new System.EventHandler(this.btnLinkedIn_Click);
+            // 
+            // btnTwitter
+            // 
+            this.btnTwitter.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnTwitter, "btnTwitter");
+            this.btnTwitter.Name = "btnTwitter";
+            this.btnTwitter.TabStop = false;
+            this.btnTwitter.Click += new System.EventHandler(this.btnTwitter_Click);
+            // 
+            // btnFacebook
+            // 
+            this.btnFacebook.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnFacebook, "btnFacebook");
+            this.btnFacebook.Name = "btnFacebook";
+            this.btnFacebook.TabStop = false;
+            this.btnFacebook.Click += new System.EventHandler(this.btnFacebook_Click);
             // 
             // label4
             // 
@@ -120,6 +207,13 @@
             this.panelTitleBar.PerformLayout();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGithub)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInstagram)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLinkedIn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTwitter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFacebook)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -134,5 +228,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox btnEmail;
+        private System.Windows.Forms.PictureBox btnGithub;
+        private System.Windows.Forms.PictureBox btnInstagram;
+        private System.Windows.Forms.PictureBox btnLinkedIn;
+        private System.Windows.Forms.PictureBox btnTwitter;
+        private System.Windows.Forms.PictureBox btnFacebook;
+        private System.Windows.Forms.Label label5;
     }
 }

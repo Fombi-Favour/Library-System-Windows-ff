@@ -36,5 +36,35 @@ namespace Library_Management_System.Forms
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnEmail_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("fombifavour@gmail.com");
+        }
+
+        private void btnFacebook_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/fombi.favour");
+        }
+
+        private void btnLinkedIn_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("");
+        }
+
+        private void btnTwitter_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("");
+        }
+
+        private void btnInstagram_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("");
+        }
+
+        private void btnGithub_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("");
+        }
     }
 }
