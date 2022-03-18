@@ -321,5 +321,11 @@
   <ItemGroup>
     <None Include="Resources\icons8_search_48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{987d7959-7e25-4bcc-ae84-e4205fa7278a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

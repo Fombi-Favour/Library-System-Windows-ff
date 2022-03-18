@@ -49,7 +49,7 @@ namespace Library_Management_System.Forms
 
         private void btnLinkedIn_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("");
+            System.Diagnostics.Process.Start("https://www.linkedin.com/in/fombi-favour/");
         }
 
         private void btnTwitter_Click(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace Library_Management_System.Forms
 
         private void btnGithub_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("");
+            System.Diagnostics.Process.Start("https://github.com/Fombi-Favour/Library-System-Windows-ff");
         }
     }
 }

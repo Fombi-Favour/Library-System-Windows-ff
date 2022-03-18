@@ -13,7 +13,7 @@ namespace Library_Management_System.Forms
     {
         public static MySqlConnection GetConnection()
         {
-            string sql = "datasource=localhost;port=3306;username=root;password=;database=library;";
+            string sql = "datasource=localhost;port=3306;username=root;password=;database=library;pooling=false;convert zero datetime=True";
             MySqlConnection conn = new MySqlConnection(sql);
             try
             {
@@ -26,27 +26,37 @@ namespace Library_Management_System.Forms
             return conn;
         }
 
-        public static void AddReturn(Return ret)
+        public static void AddReturn()
         {
-            string sql = "Insert into breturn values(NULL, @ReturnStudName, @ReturnStudClass, @ReturnBookName, @ReturnBookID, @ReturnIssueDate, NULL)";
+            string sql = "Insert ignore into breturn(StudName, StudClass, BookName, BookID) select StudName, StudClass, BookName, BookID from issue";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
-            cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@ReturnStudName", MySqlDbType.VarChar).Value = ret.StudName;
-            cmd.Parameters.Add("@ReturnStudClass", MySqlDbType.VarChar).Value = ret.StudClass;
-            cmd.Parameters.Add("@ReturnBookName", MySqlDbType.VarChar).Value = ret.BookName;
-            cmd.Parameters.Add("@ReturnBookID", MySqlDbType.VarChar).Value = ret.BookID;
-            cmd.Parameters.Add("@ReturnIssueDate", MySqlDbType.VarChar).Value = ret.IssueDate;
+            
+            
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Added Successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                var result = RJMessageBox.Show("Added Successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("Book return not insert. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                var result = RJMessageBox.Show("Book return not insert. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             con.Close();
         }
+
+        public static void DisplayAndSearch(string query, DataGridView dgv)
+        {
+            string sql = query;
+            MySqlConnection conn = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+            DataTable tbl = new DataTable();
+            adp.Fill(tbl);
+            dgv.DataSource = tbl;
+            conn.Close();
+        }
+
+        
     }
 }

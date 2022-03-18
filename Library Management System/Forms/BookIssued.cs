@@ -14,6 +14,7 @@ namespace Library_Management_System.Forms
     public partial class BookIssued : Form
     {
         AddIssueForm form;
+        public string id;
 
         public BookIssued()
         {
@@ -89,7 +90,11 @@ namespace Library_Management_System.Forms
             if(e.ColumnIndex == 2)
             {
                 //Return
-                RJMessageBox.Show("Are you sure to return book?", "Return Book", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                var result = RJMessageBox.Show("Are you sure to return book?", "Return Book", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if(result == DialogResult.Yes)
+                {
+                    DbReturn.AddReturn();
+                }
                 return;
             }
         }

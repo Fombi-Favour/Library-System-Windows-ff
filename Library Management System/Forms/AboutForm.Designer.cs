@@ -46,6 +46,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panelTitleBar.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -55,6 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnLinkedIn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTwitter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFacebook)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -91,6 +94,8 @@
             // 
             // guna2GradientPanel2
             // 
+            this.guna2GradientPanel2.Controls.Add(this.label6);
+            this.guna2GradientPanel2.Controls.Add(this.pictureBox1);
             this.guna2GradientPanel2.Controls.Add(this.label5);
             this.guna2GradientPanel2.Controls.Add(this.pictureBox7);
             this.guna2GradientPanel2.Controls.Add(this.btnEmail);
@@ -194,6 +199,21 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Name = "label2";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Name = "label6";
+            // 
             // AboutForm
             // 
             resources.ApplyResources(this, "$this");
@@ -214,6 +234,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnLinkedIn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTwitter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFacebook)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -236,5 +257,7 @@
         private System.Windows.Forms.PictureBox btnTwitter;
         private System.Windows.Forms.PictureBox btnFacebook;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

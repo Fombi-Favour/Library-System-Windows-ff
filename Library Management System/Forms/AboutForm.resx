@@ -128,16 +128,92 @@
     <value>14, 27</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>739, 685</value>
+    <value>739, 734</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 16.2pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 591</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 34</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>+237 6 74 08 49 35</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>guna2GradientPanel2</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAJASURBVGhD7dk/axRRFIfhC9r5DxEDWlpIIIKNjY2CCHYWQhBDIDYBCxHsrAzYCyKCCvo1LK1E
+        IcZgCNjEQgQLKzGJIqIZ3xNn5bfXmdk9O3dcB+Z9uE1yz+wsG93Z2dDV1dXVgrIwwVpgLbI+sppix7bH
+        uMk6mD96zbIww9pk/WsbrIv5WYxYFqZZW9uHGw977Av52TizlzALn7cPM16fWAfys3KUhVv5Af4HC/lZ
+        OcrCyp/x8VvOz8rR739Epc7gLZawC/q7BqznZ+VIx8VO3MYWet2F7mmEOx0WVxD3E6eg+5Jzp8PiMYp6
+        hz3QvUm502FR9gSsO9C9SbnTYXEdZdmf0mHo/mTc6bA4hqqOQvcn406HI69Q1BPovqTc6XBkFnHfMQnd
+        l5Q7HY7swCq0Reie5NzpcIFz0OwVOAndk5Q7HS4R/5f6AYege5Jxp8Ml9mIN2mvsh+5Lwp0OVziOr9Ce
+        Yzd0X23udHiAS7A3Me0Z9kH31eJOh4dwFXF2qT0B3WfszfAI9GcDudPhId1A3HucgP3e/tyewrLL8fsY
+        +gLQnQ47zOMHtG94gfjnll3FnoUeo5A7HXY6j3UMm70aD1D5arjT4RHYZcUbeHoJPUYfdzo8IvusfA/6
+        8bMq+4yt833c6XBNp7GCquxJ2uWJzvVxp8MJ2AXgHOyduih7pXT/X9wNuK1SxxSu4REe4jLsCeqeyEi3
+        VVp/Y6v1txZbfnPXavXt9V6t/oKjV/9XTF9YTbFjJ/6Kqaurq6u5QvgFe/gZcIyPcJkAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 572</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 71</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>guna2GradientPanel2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 16.2pt, style=Bold</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -163,7 +239,7 @@
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -228,7 +304,7 @@
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;pictureBox7.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="btnEmail.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -280,7 +356,7 @@
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;btnEmail.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="btnGithub.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -338,7 +414,7 @@
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;btnGithub.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="btnInstagram.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -416,7 +492,7 @@
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;btnInstagram.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="btnLinkedIn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -460,7 +536,7 @@
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;btnLinkedIn.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="btnTwitter.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -506,7 +582,7 @@
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;btnTwitter.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="btnFacebook.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -544,7 +620,7 @@
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;btnFacebook.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -581,7 +657,7 @@ the book.</value>
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -614,7 +690,7 @@ the book.</value>
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -647,13 +723,13 @@ the book.</value>
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="guna2GradientPanel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 76</value>
   </data>
   <data name="guna2GradientPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 597</value>
+    <value>715, 646</value>
   </data>
   <data name="guna2GradientPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>

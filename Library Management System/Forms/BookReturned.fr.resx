@@ -120,9 +120,6 @@
   <data name="btnDashboard.Text" xml:space="preserve">
     <value>ACCUEIL</value>
   </data>
-  <data name="btnPrint.Text" xml:space="preserve">
-    <value>IMPRIMER</value>
-  </data>
   <data name="Column1.HeaderText" xml:space="preserve">
     <value>Nom d'élève</value>
   </data>
@@ -138,7 +135,7 @@
   <data name="Column5.HeaderText" xml:space="preserve">
     <value>Date Empruntée</value>
   </data>
-  <data name="Column6.HeaderText" xml:space="preserve">
+  <data name="Column8.HeaderText" xml:space="preserve">
     <value>Date de Retour</value>
   </data>
 </root>

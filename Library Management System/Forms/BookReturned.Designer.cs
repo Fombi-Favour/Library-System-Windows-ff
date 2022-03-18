@@ -116,7 +116,7 @@
             this.GVlist2.RowHeadersVisible = false;
             this.GVlist2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GVlist2.RowTemplate.Height = 50;
-            this.GVlist2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GVlist2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.GVlist2.ShowEditingIcon = false;
             this.GVlist2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GVlist2_CellClick);
             // 
@@ -160,6 +160,7 @@
             // 
             // Column8
             // 
+            this.Column8.DataPropertyName = "ReturnDate";
             dataGridViewCellStyle3.Format = "d";
             dataGridViewCellStyle3.NullValue = null;
             this.Column8.DefaultCellStyle = dataGridViewCellStyle3;

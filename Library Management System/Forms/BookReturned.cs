@@ -21,7 +21,7 @@ namespace Library_Management_System.Forms
 
         public void Display()
         {
-            
+            DbReturn.DisplayAndSearch("Select StudName, StudClass, BookName, BookID, IssueDate, ReturnDate from breturn ", GVlist2);
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -37,17 +37,13 @@ namespace Library_Management_System.Forms
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            
+            DbReturn.DisplayAndSearch("Select StudName, StudClass, BookName, BookID, IssueDate, ReturnDate from breturn where StudName like '%" + txtSearch.Text + "%'", GVlist2);
         }
 
         private void GVlist2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.ColumnIndex == 1)
-            {
-                //Edit
-                return;
-            }
-            if(e.ColumnIndex == 2)
+            
+            if(e.ColumnIndex == 0)
             {
                 //Delete
                 if (Properties.Settings.Default.lang == "en-US")
@@ -55,7 +51,7 @@ namespace Library_Management_System.Forms
                     var result = RJMessageBox.Show("Are you sure to delete?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
-                        DbBook.DeleteBook(GVlist2.Rows[e.RowIndex].Cells[2].Value.ToString());
+                        DbIssue.DeleteIssue(GVlist2.Rows[e.RowIndex].Cells[2].Value.ToString());
                         Display();
                     }
                 }
@@ -64,7 +60,7 @@ namespace Library_Management_System.Forms
                     var result = RJMessageBox.Show("Êtes-vous sûr de supprimer?", "Supprimer", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
-                        DbBook.DeleteBook(GVlist2.Rows[e.RowIndex].Cells[2].Value.ToString());
+                        DbIssue.DeleteIssue(GVlist2.Rows[e.RowIndex].Cells[2].Value.ToString());
                         Display();
                     }
                 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Common.Cache;
 
 namespace Library_Management_System
 {
@@ -44,7 +45,7 @@ namespace Library_Management_System
 
         private void WelcomeForm_Load(object sender, EventArgs e)
         {
-            lblUsername.Text = "Sarah";
+            lblUsername.Text = UserLoginCache.UserName;
             this.Opacity = 0.0;
             circularProgressBar1.Value = 0;
             circularProgressBar1.Minimum = 0;

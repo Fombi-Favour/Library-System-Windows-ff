@@ -198,7 +198,22 @@ namespace Library_Management_System
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (Properties.Settings.Default.lang == "en-US")
+            {
+                var result = RJMessageBox.Show("Are you sure to exit the application?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
+            else
+            {
+                var result = RJMessageBox.Show("Êtes-vous sûr de quitter l'application?", "Avertissement", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
         }
 
         private void btnMin_Click(object sender, EventArgs e)

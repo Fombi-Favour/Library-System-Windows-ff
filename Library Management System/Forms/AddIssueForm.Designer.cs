@@ -42,8 +42,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtBkName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.IssueDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.panelTileBar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -75,8 +73,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.IssueDate);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtBkid);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtClass);
@@ -201,23 +197,6 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.label2.Name = "label2";
             // 
-            // IssueDate
-            // 
-            this.IssueDate.Checked = true;
-            resources.ApplyResources(this.IssueDate, "IssueDate");
-            this.IssueDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(97)))), ((int)(((byte)(232)))));
-            this.IssueDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.IssueDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.IssueDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.IssueDate.Name = "IssueDate";
-            this.IssueDate.Value = new System.DateTime(2022, 3, 11, 16, 1, 2, 782);
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label5.Name = "label5";
-            // 
             // AddIssueForm
             // 
             resources.ApplyResources(this, "$this");
@@ -250,7 +229,5 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtBkName;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker IssueDate;
-        private System.Windows.Forms.Label label5;
     }
 }

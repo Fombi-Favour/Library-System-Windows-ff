@@ -10,6 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Common.Cache;
 
 namespace Library_Management_System
 {
@@ -87,6 +88,11 @@ namespace Library_Management_System
                 {
                     while (reader.Read())
                     {
+                        UserLoginCache.userID = reader.GetInt32(0);
+                        UserLoginCache.School = reader.GetString(1);
+                        UserLoginCache.UserName = reader.GetString(2);
+                        UserLoginCache.Password = reader.GetString(3);
+
                         new WelcomeForm().ShowDialog();
                         this.Hide();
                     }

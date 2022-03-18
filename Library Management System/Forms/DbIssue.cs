@@ -13,7 +13,7 @@ namespace Library_Management_System.Forms
     {
         public static MySqlConnection GetConnection()
         {
-            string sql = "datasource=localhost;port=3306;username=root;password=;database=library;convert zero datetime=true";
+            string sql = "datasource=localhost;port=3306;username=root;password=;database=library; convert zero datetime=true";
             MySqlConnection conn = new MySqlConnection(sql);
             try
             {

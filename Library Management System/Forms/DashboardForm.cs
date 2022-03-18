@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Common.Cache;
 
 namespace Library_Management_System.Forms
 {
@@ -28,6 +29,12 @@ namespace Library_Management_System.Forms
             lblDate.Text = DateTime.Now.ToLongDateString();
         }
 
+        private void LoadUserData()
+        {
+            lblName.Text = UserLoginCache.UserName;
+            lblSchool.Text = UserLoginCache.School;
+        }
+
         private void btnAbt_Click(object sender, EventArgs e)
         {
             new AboutForm().ShowDialog();
@@ -35,6 +42,8 @@ namespace Library_Management_System.Forms
 
         private void DashboardForm_Load(object sender, EventArgs e)
         {
+            LoadUserData();
+
             conn.Open();
             //Counting books
             MySqlDataAdapter adp = new MySqlDataAdapter("Select count(*) from book", conn);
