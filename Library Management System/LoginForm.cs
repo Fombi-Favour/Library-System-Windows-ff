@@ -48,8 +48,8 @@ namespace Library_Management_System
 
         private void linkLblReg_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             new RegisterForm().ShowDialog();
-            this.Close();
         }
 
         private void btnclose_Click(object sender, EventArgs e)
@@ -64,6 +64,7 @@ namespace Library_Management_System
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
+            this.Hide();
             query = "Select * from users where name='"+ txtuser.Text + "' and password='" + txtpass.Text + "' ";
             SelectData(query);
             Clear();

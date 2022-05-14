@@ -41,12 +41,13 @@ namespace Library_Management_System
 
         private void linkLblLog_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             new LoginForm().ShowDialog();
-            this.Close();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            this.Hide();
             query = "Insert into `users`(`school`, `name`, `password`) values" +
                 "('"+txtsch.Text+"' " +
                 ",'"+txtuser.Text+"' " +

@@ -20,15 +20,15 @@ namespace Library_Management_System
         private void btnEn_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.lang = "en-US";
+            this.Hide();
             new loadingForm().ShowDialog();
-            this.Close();
         }
 
         private void btnFr_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.lang = "fr";
+            this.Hide();
             new loadingForm().ShowDialog();
-            this.Close();
         }
     }
 }

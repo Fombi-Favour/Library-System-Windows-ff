@@ -130,8 +130,8 @@ namespace Library_Management_System
                 var result = RJMessageBox.Show("Are you sure to logout?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
+                    this.Hide();
                     new LoginForm().ShowDialog();
-                    this.Close();
                 }
             }
             else
@@ -139,15 +139,15 @@ namespace Library_Management_System
                 var result = RJMessageBox.Show("Êtes-vous sûr de vous déconnecter?", "Avertissement", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
+                    this.Hide();
                     new LoginForm().Show();
-                    this.Close();
                 }
             }
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            currentForm.Close();
+            currentForm.Hide();
             Reset();
         }
 

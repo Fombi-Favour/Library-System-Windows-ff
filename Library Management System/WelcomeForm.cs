@@ -38,8 +38,8 @@ namespace Library_Management_System
             if (this.Opacity == 0)
             {
                 timer2.Stop();
-                new MenuForm().ShowDialog();
                 this.Hide();
+                new MenuForm().ShowDialog();
             }
         }
 
