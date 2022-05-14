@@ -97,13 +97,27 @@ namespace Library_Management_System
                     //Retry Button
                     button1.Visible = true;
                     button1.Location = new Point(xCenter - (button1.Width / 2) - 5, yCenter);
-                    button1.Text = "Retry";
+                    if(Properties.Settings.Default.lang == "en-US")
+                    {
+                        button1.Text = "Retry";
+                    }
+                    else if (Properties.Settings.Default.lang == "fr")
+                    {
+                        button1.Text = "Réessayer";
+                    }
                     button1.DialogResult = DialogResult.Retry;//Set DialogResult
 
                     //Cancel Button
                     button2.Visible = true;
                     button2.Location = new Point((xCenter + (button1.Width / 2) + 5), yCenter);
-                    button2.Text = "Cancel";
+                    if(Properties.Settings.Default.lang == "en-US")
+                    {
+                        button2.Text = "Cancel";
+                    }
+                    else if (Properties.Settings.Default.lang == "fr")
+                    {
+                        button2.Text = "Annuler";
+                    }
                     button2.DialogResult = DialogResult.Cancel;//Set DialogResult
                     button2.BackColor = Color.DimGray;
 
@@ -120,13 +134,27 @@ namespace Library_Management_System
                     //Yes Button
                     button1.Visible = true;
                     button1.Location = new Point(xCenter - (button1.Width / 2) - 5, yCenter);
-                    button1.Text = "Yes";
+                    if(Properties.Settings.Default.lang == "en-US")
+                    {
+                        button1.Text = "Yes";
+                    }
+                    else if(Properties.Settings.Default.lang == "fr")
+                    {
+                        button1.Text = "Oui";
+                    }
                     button1.DialogResult = DialogResult.Yes;//Set DialogResult
 
                     //No Button
                     button2.Visible = true;
                     button2.Location = new Point(xCenter + (button1.Width / 2) + 5, yCenter);
-                    button2.Text = "No";
+                    if(Properties.Settings.Default.lang == "en-US")
+                    {
+                        button2.Text = "No";
+                    }
+                    else if(Properties.Settings.Default.lang == "fr")
+                    {
+                        button2.Text = "Non";
+                    }
                     button2.DialogResult = DialogResult.No;//Set DialogResult
                     button2.BackColor = Color.IndianRed;
 

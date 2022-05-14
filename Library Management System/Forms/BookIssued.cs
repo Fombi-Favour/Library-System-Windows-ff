@@ -36,8 +36,8 @@ namespace Library_Management_System.Forms
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            new MenuForm().ShowDialog();
             this.Close();
+            new MenuForm().Hide();
         }
 
         private void BookIssued_Shown(object sender, EventArgs e)

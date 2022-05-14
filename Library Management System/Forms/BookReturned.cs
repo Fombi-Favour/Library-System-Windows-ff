@@ -26,8 +26,8 @@ namespace Library_Management_System.Forms
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            new MenuForm().ShowDialog();
             this.Close();
+            new MenuForm().Hide();
         }
 
         private void BookReturned_Shown(object sender, EventArgs e)
