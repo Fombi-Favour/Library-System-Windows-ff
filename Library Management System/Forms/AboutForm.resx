@@ -167,18 +167,17 @@
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAJASURBVGhD7dk/axRRFIfhC9r5DxEDWlpIIIKNjY2CCHYWQhBDIDYBCxHsrAzYCyKCCvo1LK1E
-        IcZgCNjEQgQLKzGJIqIZ3xNn5bfXmdk9O3dcB+Z9uE1yz+wsG93Z2dDV1dXVgrIwwVpgLbI+sppix7bH
-        uMk6mD96zbIww9pk/WsbrIv5WYxYFqZZW9uHGw977Av52TizlzALn7cPM16fWAfys3KUhVv5Af4HC/lZ
-        OcrCyp/x8VvOz8rR739Epc7gLZawC/q7BqznZ+VIx8VO3MYWet2F7mmEOx0WVxD3E6eg+5Jzp8PiMYp6
-        hz3QvUm502FR9gSsO9C9SbnTYXEdZdmf0mHo/mTc6bA4hqqOQvcn406HI69Q1BPovqTc6XBkFnHfMQnd
-        l5Q7HY7swCq0Reie5NzpcIFz0OwVOAndk5Q7HS4R/5f6AYege5Jxp8Ml9mIN2mvsh+5Lwp0OVziOr9Ce
-        Yzd0X23udHiAS7A3Me0Z9kH31eJOh4dwFXF2qT0B3WfszfAI9GcDudPhId1A3HucgP3e/tyewrLL8fsY
-        +gLQnQ47zOMHtG94gfjnll3FnoUeo5A7HXY6j3UMm70aD1D5arjT4RHYZcUbeHoJPUYfdzo8IvusfA/6
-        8bMq+4yt833c6XBNp7GCquxJ2uWJzvVxp8MJ2AXgHOyduih7pXT/X9wNuK1SxxSu4REe4jLsCeqeyEi3
-        VVp/Y6v1txZbfnPXavXt9V6t/oKjV/9XTF9YTbFjJ/6Kqaurq6u5QvgFe/gZcIyPcJkAAAAASUVORK5C
-        YII=
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAkBJREFUaEPt
+        2T9rFFEUh+EL2vkPEQNaWkgggo2NjYIIdhZCEEMgNgELEeysDNgLIoIK+jUsrUQhxmAI2MRCBAsrMYki
+        ohnfE2flt9eZ2T07d1wH5n24TXLP7Cwb3dnZ0NXV1dWCsjDBWmAtsj6ymmLHtse4yTqYP3rNsjDD2mT9
+        axusi/lZjFgWpllb24cbD3vsC/nZOLOXMAuftw8zXp9YB/KzcpSFW/kB/gcL+Vk5ysLKn/HxW87PytHv
+        f0SlzuAtlrAL+rsGrOdn5UjHxU7cxhZ63YXuaYQ7HRZXEPcTp6D7knOnw+IxinqHPdC9SbnTYVH2BKw7
+        0L1JudNhcR1l2Z/SYej+ZNzpsDiGqo5C9yfjTocjr1DUE+i+pNzpcGQWcd8xCd2XlDsdjuzAKrRF6J7k
+        3OlwgXPQ7BU4Cd2TlDsdLhH/l/oBh6B7knGnwyX2Yg3aa+yH7kvCnQ5XOI6v0J5jN3Rfbe50eIBLsDcx
+        7Rn2QffV4k6Hh3AVcXapPQHdZ+zN8Aj0ZwO50+Eh3UDce5yA/d7+3J7Cssvx+xj6AtCdDjvM4we0b3iB
+        +OeWXcWehR6jkDsddjqPdQybvRoPUPlquNPhEdhlxRt4egk9Rh93Ojwi+6x8D/rxsyr7jK3zfdzpcE2n
+        sYKq7Ena5YnO9XGnwwnYBeAc7J26KHuldP9f3A24rVLHFK7hER7iMuwJ6p7ISLdVWn9jq/W3Flt+c9dq
+        9e31Xq3+gqNX/1dMX1hNsWMn/oqpq6urq7lC+AV7+BlwjI9wmQAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -358,64 +357,6 @@
   <data name="&gt;&gt;btnEmail.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="btnGithub.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="btnGithub.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnGithub.Location" type="System.Drawing.Point, System.Drawing">
-    <value>537, 377</value>
-  </data>
-  <data name="btnGithub.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 71</value>
-  </data>
-  <data name="btnGithub.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnGithub.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;btnGithub.Name" xml:space="preserve">
-    <value>btnGithub</value>
-  </data>
-  <data name="&gt;&gt;btnGithub.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnGithub.Parent" xml:space="preserve">
-    <value>guna2GradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;btnGithub.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="btnInstagram.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAACo5JREFUaEPt
@@ -492,7 +433,7 @@
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;btnInstagram.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="btnLinkedIn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -536,7 +477,7 @@
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;btnLinkedIn.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="btnTwitter.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -582,7 +523,7 @@
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;btnTwitter.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="btnFacebook.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -620,7 +561,7 @@
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;btnFacebook.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -657,7 +598,7 @@ the book.</value>
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -690,7 +631,7 @@ the book.</value>
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -723,7 +664,7 @@ the book.</value>
     <value>guna2GradientPanel2</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="guna2GradientPanel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 76</value>

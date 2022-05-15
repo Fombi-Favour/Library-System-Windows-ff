@@ -39,7 +39,7 @@ namespace Library_Management_System.Forms
 
         private void btnEmail_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("fombifavour@gmail.com");
+            System.Diagnostics.Process.Start("mailto:fombifavour@gmail.com");
         }
 
         private void btnFacebook_Click(object sender, EventArgs e)
@@ -60,11 +60,6 @@ namespace Library_Management_System.Forms
         private void btnInstagram_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("");
-        }
-
-        private void btnGithub_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/Fombi-Favour/Library-System-Windows-ff");
         }
     }
 }
