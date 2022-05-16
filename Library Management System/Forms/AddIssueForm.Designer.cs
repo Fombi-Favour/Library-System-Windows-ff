@@ -33,6 +33,8 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.lblText = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DPdate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtBkid = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtClass = new Guna.UI2.WinForms.Guna2TextBox();
@@ -73,6 +75,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.DPdate);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtBkid);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtClass);
@@ -84,6 +88,24 @@
             this.panel1.Controls.Add(this.label2);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // DPdate
+            // 
+            this.DPdate.BorderColor = System.Drawing.Color.Transparent;
+            this.DPdate.Checked = true;
+            this.DPdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(56)))), ((int)(((byte)(222)))));
+            resources.ApplyResources(this.DPdate, "DPdate");
+            this.DPdate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DPdate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DPdate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DPdate.Name = "DPdate";
+            this.DPdate.Value = new System.DateTime(2022, 5, 15, 13, 22, 29, 725);
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.label5.Name = "label5";
             // 
             // txtBkid
             // 
@@ -229,5 +251,7 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtBkName;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DPdate;
+        private System.Windows.Forms.Label label5;
     }
 }

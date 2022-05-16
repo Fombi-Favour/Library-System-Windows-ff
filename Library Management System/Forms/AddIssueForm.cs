@@ -14,7 +14,7 @@ namespace Library_Management_System.Forms
     public partial class AddIssueForm : Form
     {
         private readonly BookIssued _parent;
-        public string studName, studClass, bookName, bookID;
+        public string studName, studClass, bookName, bookID, issueDate;
 
         public AddIssueForm(BookIssued parent)
         {
@@ -38,6 +38,7 @@ namespace Library_Management_System.Forms
                 txtClass.Text = studClass;
                 txtBkName.Text = bookName;
                 txtBkid.Text = bookID;
+                DPdate.Text = issueDate;
             }
             else if(Properties.Settings.Default.lang == "fr")
             {
@@ -47,6 +48,7 @@ namespace Library_Management_System.Forms
                 txtClass.Text = studClass;
                 txtBkName.Text = bookName;
                 txtBkid.Text = bookID;
+                DPdate.Text = issueDate;
             }
         }
 
@@ -112,14 +114,15 @@ namespace Library_Management_System.Forms
 
             if(btnIssue.Text == "SAVE" || btnIssue.Text == "ENREGISTRER")
             {
-                Issue iss = new Issue(txtStudName.Text.Trim(), txtClass.Text.Trim(), txtBkName.Text.Trim(), txtBkid.Text.Trim());
+                Issue iss = new Issue(txtStudName.Text.Trim(), txtClass.Text.Trim(), txtBkName.Text.Trim(), txtBkid.Text.Trim(), DPdate.Value);
                 DbIssue.AddIssue(iss);
                 Clear();
             }
             if(btnIssue.Text == "UPDATE" || btnIssue.Text == "MISE À JOUR")
             {
-                Issue iss = new Issue(txtStudName.Text.Trim(), txtClass.Text.Trim(), txtBkName.Text.Trim(), txtBkid.Text.Trim());
-                DbIssue.UpdateIssue(iss, bookID);
+                Issue iss = new Issue(txtStudName.Text.Trim(), txtClass.Text.Trim(), txtBkName.Text.Trim(), txtBkid.Text.Trim(), DPdate.Value);
+                DbIssue.UpdateIssue(iss);
+                this.Hide();
             }
             _parent.Display();
         }

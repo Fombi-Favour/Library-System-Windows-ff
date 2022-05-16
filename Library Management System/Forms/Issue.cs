@@ -12,13 +12,15 @@ namespace Library_Management_System.Forms
         public string StudClass { get; set; }
         public string BookName { get; set; }
         public string BookID { get; set; }
+        public DateTime IssueDate { get; set; }
 
-        public Issue(string studName, string studClass, string bookName, string bookID)
+        public Issue(string studName, string studClass, string bookName, string bookID, DateTime issueDate)
         {
             StudName = studName;
             StudClass = studClass;
             BookName = bookName;
             BookID = bookID;
+            IssueDate = issueDate;
         }
     }
 }

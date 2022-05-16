@@ -13,7 +13,7 @@ namespace Library_Management_System.Forms
     {
         public static MySqlConnection GetConnection()
         {
-            string sql = "datasource=localhost;port=3306;username=root;password=;database=library; convert zero datetime=true";
+            string sql = "datasource=localhost;port=3306;username=root;password=;database=library;";
             MySqlConnection conn = new MySqlConnection(sql);
             try
             {
@@ -28,7 +28,7 @@ namespace Library_Management_System.Forms
 
         public static void AddIssue(Issue iss)
         {
-            string sql = "Insert into issue values (NULL, @IssueStudName, @IssueStudClass, @IssueBookName, @IssueBookID, NULL)";
+            string sql = "Insert into issue values (NULL, @IssueStudName, @IssueStudClass, @IssueBookName, @IssueBookID, @IssueIssueDate)";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
@@ -36,6 +36,7 @@ namespace Library_Management_System.Forms
             cmd.Parameters.Add("@IssueStudClass", MySqlDbType.VarChar).Value = iss.StudClass;
             cmd.Parameters.Add("@IssueBookName", MySqlDbType.VarChar).Value = iss.BookName;
             cmd.Parameters.Add("@IssueBookID", MySqlDbType.VarChar).Value = iss.BookID;
+            cmd.Parameters.Add("IssueIssueDate", MySqlDbType.Date).Value = iss.IssueDate;
             try
             {
                 cmd.ExecuteNonQuery();
@@ -62,16 +63,17 @@ namespace Library_Management_System.Forms
             con.Close();
         }
 
-        public static void UpdateIssue(Issue iss, string id)
+        public static void UpdateIssue(Issue iss)
         {
-            string sql = "Update issue set StudName = @IssueStudName, StudClass = @IssueStudClass, BookName = @IssueBookName where BookID = @IssueBookID";
+            string sql = "Update issue set StudName = @IssueStudName, StudClass = @IssueStudClass, BookName = @IssueBookName, BookID = @IssueBookID where 1";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.Add("@IssueStudName", MySqlDbType.VarChar).Value = iss.StudName;
             cmd.Parameters.Add("@IssueStudClass", MySqlDbType.VarChar).Value = iss.StudClass;
             cmd.Parameters.Add("@IssueBookName", MySqlDbType.VarChar).Value = iss.BookName;
-            cmd.Parameters.Add("@IssueBookID", MySqlDbType.VarChar).Value = id;
+            cmd.Parameters.Add("@IssueBookID", MySqlDbType.VarChar).Value = iss.BookID;
+            cmd.Parameters.Add("@IssueIssueDate", MySqlDbType.Date).Value = iss.IssueDate;
 
             try
             {

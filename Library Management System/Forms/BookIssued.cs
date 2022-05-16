@@ -60,6 +60,7 @@ namespace Library_Management_System.Forms
                 form.studClass = GVlist1.Rows[e.RowIndex].Cells[4].Value.ToString();
                 form.bookName = GVlist1.Rows[e.RowIndex].Cells[5].Value.ToString();
                 form.bookID = GVlist1.Rows[e.RowIndex].Cells[6].Value.ToString();
+                form.issueDate = GVlist1.Rows[e.RowIndex].Cells[7].Value.ToString();
                 form.UpdateInfo();
                 form.ShowDialog();
                 return;
@@ -72,7 +73,7 @@ namespace Library_Management_System.Forms
                     var result = RJMessageBox.Show("Are you sure to delete?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
-                        DbIssue.DeleteIssue(GVlist1.Rows[e.RowIndex].Cells[6].Value.ToString());
+                        DbIssue.DeleteIssue(GVlist1.Rows[e.RowIndex].Cells[7].Value.ToString());
                         Display();
                     }
                 }
@@ -81,7 +82,7 @@ namespace Library_Management_System.Forms
                     var result = RJMessageBox.Show("Êtes-vous sûr de supprimer?", "Supprimer", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
-                        DbIssue.DeleteIssue(GVlist1.Rows[e.RowIndex].Cells[6].Value.ToString());
+                        DbIssue.DeleteIssue(GVlist1.Rows[e.RowIndex].Cells[7].Value.ToString());
                         Display();
                     }
                 }

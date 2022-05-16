@@ -124,6 +124,15 @@
   <data name="lblText.Text" xml:space="preserve">
     <value>Ajouter Emprunter Livre</value>
   </data>
+  <data name="DPdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 463</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 27</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Date D'emprunt</value>
+  </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 27</value>
   </data>
