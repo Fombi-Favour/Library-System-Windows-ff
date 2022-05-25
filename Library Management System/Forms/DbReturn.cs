@@ -26,17 +26,12 @@ namespace Library_Management_System.Forms
             return conn;
         }
 
-        public static void AddReturn(Issue iss, Return ret)
+        public static void AddReturn()
         {
-            string sql = "Insert ignore into breturn(@ReturnStudName, @ReturnStudClass, @ReturnBookName, @ReturnBookID, @ReturnIssueDate) select @IssueStudName, @IssueStudClass, @IssueBookName, @IssueBookID, @IssueIssueDate from issue";
+            string sql = "Insert into breturn(StudName, StudClass, BookName, BookID, IssueDate) select StudName, StudClass, BookName, BookID, IssueDate from issue where 0";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@ReturnStudentName", MySqlDbType.VarChar).Value = ret.StudName;
-            cmd.Parameters.Add("@ReturnStudentClass", MySqlDbType.VarChar).Value = ret.StudClass;
-            cmd.Parameters.Add("@ReturnBookName", MySqlDbType.VarChar).Value = ret.BookName;
-            cmd.Parameters.Add("@ReturnBookID", MySqlDbType.VarChar).Value = ret.BookID;
-            cmd.Parameters.Add("@ReturnIssueDate", MySqlDbType.Date).Value = ret.IssueDate;
             try
             {
                 cmd.ExecuteNonQuery();
@@ -45,6 +40,25 @@ namespace Library_Management_System.Forms
             catch (MySqlException ex)
             {
                 var result = RJMessageBox.Show("Book return not insert. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+        }
+
+        public static void DeleteReturn(string id)
+        {
+            string sql = "Delete from breturn where BookID = @ReturnBookID";
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("@ReturnBookID", MySqlDbType.VarChar).Value = id;
+            try
+            {
+                cmd.ExecuteNonQuery();
+                var result = RJMessageBox.Show("Deleted Successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (MySqlException ex)
+            {
+                var result = RJMessageBox.Show("Book return not delete. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             con.Close();
         }

@@ -60,7 +60,7 @@ namespace Library_Management_System.Forms
                     var result = RJMessageBox.Show("Êtes-vous sûr de supprimer?", "Supprimer", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
-                        DbIssue.DeleteIssue(GVlist2.Rows[e.RowIndex].Cells[2].Value.ToString());
+                        DbReturn.DeleteReturn(GVlist2.Rows[e.RowIndex].Cells[2].Value.ToString());
                         Display();
                     }
                 }
