@@ -33,6 +33,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.lblText = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BookCb = new Guna.UI2.WinForms.Guna2ComboBox();
             this.DPdate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.txtBkid = new Guna.UI2.WinForms.Guna2TextBox();
@@ -42,7 +43,6 @@
             this.btnIssue = new Guna.UI2.WinForms.Guna2Button();
             this.txtStudName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtBkName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelTileBar.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -75,6 +75,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.BookCb);
             this.panel1.Controls.Add(this.DPdate);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtBkid);
@@ -84,10 +85,23 @@
             this.panel1.Controls.Add(this.btnIssue);
             this.panel1.Controls.Add(this.txtStudName);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txtBkName);
             this.panel1.Controls.Add(this.label2);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // BookCb
+            // 
+            this.BookCb.BackColor = System.Drawing.Color.Transparent;
+            this.BookCb.BorderRadius = 24;
+            this.BookCb.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.BookCb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BookCb.FillColor = System.Drawing.SystemColors.ScrollBar;
+            this.BookCb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BookCb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.BookCb, "BookCb");
+            this.BookCb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.BookCb.Name = "BookCb";
+            this.BookCb.SelectionChangeCommitted += new System.EventHandler(this.BookCb_SelectionChangeCommitted);
             // 
             // DPdate
             // 
@@ -194,25 +208,6 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.label3.Name = "label3";
             // 
-            // txtBkName
-            // 
-            resources.ApplyResources(this.txtBkName, "txtBkName");
-            this.txtBkName.BorderRadius = 20;
-            this.txtBkName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBkName.DefaultText = "";
-            this.txtBkName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBkName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBkName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBkName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBkName.FillColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtBkName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBkName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtBkName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBkName.Name = "txtBkName";
-            this.txtBkName.PasswordChar = '\0';
-            this.txtBkName.PlaceholderText = "";
-            this.txtBkName.SelectedText = "";
-            // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
@@ -228,6 +223,7 @@
             this.Controls.Add(this.panelTileBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddIssueForm";
+            this.Load += new System.EventHandler(this.AddIssueForm_Load);
             this.panelTileBar.ResumeLayout(false);
             this.panelTileBar.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -249,9 +245,9 @@
         private Guna.UI2.WinForms.Guna2Button btnIssue;
         private Guna.UI2.WinForms.Guna2TextBox txtStudName;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox txtBkName;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2DateTimePicker DPdate;
         private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2ComboBox BookCb;
     }
 }

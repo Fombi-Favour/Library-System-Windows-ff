@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Guna.UI2.WinForms;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -143,6 +144,35 @@ namespace Library_Management_System.Forms
             DataTable tbl = new DataTable();
             adp.Fill(tbl);
             dgv.DataSource = tbl;
+            conn.Close();
+        }
+
+        public static void FillBook(Guna2ComboBox cb)
+        {
+            MySqlConnection conn = GetConnection();
+            MySqlCommand cmd = new MySqlCommand("Select Name from book", conn);
+            MySqlDataReader rdr;
+            rdr = cmd.ExecuteReader();
+            DataTable tbl = new DataTable();
+            tbl.Columns.Add("Name", typeof(string));
+            tbl.Load(rdr);
+            cb.ValueMember = "Name";
+            cb.DataSource = tbl;
+            conn.Close();
+        }
+
+        public static void FetchData(Guna2ComboBox cb, Guna2TextBox txtId)
+        {
+            MySqlConnection conn = GetConnection();
+            string query = "select ID from book where Name=" +cb.SelectedValue.ToString()+ "";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            DataTable tbl = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(tbl);
+            foreach(DataRow dr in tbl.Rows)
+            {
+                txtId.Text = dr["ID"].ToString();
+            }
             conn.Close();
         }
     }

@@ -216,6 +216,33 @@
   <data name="&gt;&gt;panelTileBar.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="BookCb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 13.8pt</value>
+  </data>
+  <data name="BookCb.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="BookCb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 264</value>
+  </data>
+  <data name="BookCb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>557, 36</value>
+  </data>
+  <data name="BookCb.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;BookCb.Name" xml:space="preserve">
+    <value>BookCb</value>
+  </data>
+  <data name="&gt;&gt;BookCb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
+  </data>
+  <data name="&gt;&gt;BookCb.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;BookCb.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="DPdate.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 13.8pt</value>
   </data>
@@ -238,7 +265,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;DPdate.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -274,7 +301,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtBkid.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -304,7 +331,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;txtBkid.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -340,7 +367,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="txtClass.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -370,7 +397,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;txtClass.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -406,7 +433,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btnIssue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -436,7 +463,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnIssue.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="txtStudName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -466,7 +493,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;txtStudName.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -502,36 +529,6 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="txtBkName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="txtBkName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 13.8pt</value>
-  </data>
-  <data name="txtBkName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 247</value>
-  </data>
-  <data name="txtBkName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
-  </data>
-  <data name="txtBkName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>569, 49</value>
-  </data>
-  <data name="txtBkName.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;txtBkName.Name" xml:space="preserve">
-    <value>txtBkName</value>
-  </data>
-  <data name="&gt;&gt;txtBkName.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;txtBkName.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;txtBkName.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
   <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
